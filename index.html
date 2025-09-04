@@ -26,7 +26,7 @@
     content="Empresa de software dedicada a la creación de aplicaciones personalizadas para tus negocios. Automatizamos procesos con soluciones tecnológicas donde solo pagas por lo que usas.">
   <meta name="author" content="Softmar Company">
   <meta name="generator" content="">
-  <title>Softmar Company - Consultoria y Desarrollo de Software</title>
+  <title id="title-main">Softmar Company - Desarrollo de Software a tu medida</title>
   <link rel="icon" href="img/Portal4.png" type="image/x-icon" />
 
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
@@ -191,6 +191,7 @@
 
   <!-- Custom styles for this template -->
   <link href="carousel/carousel.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -224,7 +225,7 @@
         <svg class="bi my-1 theme-icon-active" width="2em" height="2em">
           <use href="#circle-half"></use>
         </svg>
-        <span class="ms-2">Contáctanos</span> <!-- Texto al costado del icono -->
+        <span class="ms-2" id="wsp-contactanos">Contáctanos</span> <!-- Texto al costado del icono -->
       </button>
     </div>
 
@@ -248,13 +249,15 @@
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav menu-nav ">
               <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" aria-current="page" href="#experiencia">Experiencia</a>
+                <a class="nav-link fw-bold text-dark" aria-current="page" id="nav-experiencia"
+                  href="#experiencia">Experiencia</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" href="#servicios">Servicios</a>
+                <a class="nav-link fw-bold text-dark" id="nav-servicios" href="#servicios">Servicios</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-dark" href="contactanos.html" aria-disabled="true">contáctanos</a>
+                <a class="nav-link fw-bold text-dark" id="nav-contactanos" href="contactanos.html"
+                  aria-disabled="true">contáctanos</a>
               </li>
               </ul>
             </div>
@@ -299,10 +302,11 @@
 
             <div class="container">
               <div class="carousel-caption text-start">
-                <h1>Sumate al mundo digital</h1>
-                <p class="opacity-75">Lleva tu negocio al siguiente nivel, automatiza tus procesos manuales y maximiza
+                <h1 id="container-carousel-11">Sumate al mundo digital</h1>
+                <p id="container-carousel-12" class="opacity-75">Lleva tu negocio al siguiente nivel, automatiza tus
+                  procesos manuales y maximiza
                   tus ingresos </p>
-                <p><a class="btn btn-lg btn-dark" href="#">Transformación Digital</a></p>
+                <p><a id="container-carousel-13" class="btn btn-lg btn-dark" href="#">Transformación Digital</a></p>
               </div>
             </div>
           </div>
@@ -310,13 +314,13 @@
           <div class="carousel-item">
             <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
               aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
-<rect width="100%" height="100%" fill="#343a40" /> <!-- en vez de var(--bs-dark) -->
+              <rect width="100%" height="100%" fill="#343a40" /> <!-- en vez de var(--bs-dark) -->
             </svg>
             <div class="container">
               <div class="carousel-caption">
-                <h1>Implementa tus aplicaciones sin comprar servidores</h1>
-                <p>Solo pagas por lo que usas. ¡Ahorra y escala fácilmente! </p>
-                <p><a class="btn btn-lg custom-btn" href="#">Optimiza tus Costos</a></p>
+                <h1 id="container-carousel-21">Implementa tus aplicaciones sin comprar servidores</h1>
+                <p id="container-carousel-22">Solo pagas por lo que usas. ¡Ahorra y escala fácilmente! </p>
+                <p><a id="container-carousel-23" class="btn btn-lg custom-btn" href="#">Optimiza tus Costos</a></p>
               </div>
             </div>
             <!-- Icono en la esquina superior derecha -->
@@ -350,9 +354,9 @@
             </div>
             <div class="container">
               <div class="carousel-caption text-end">
-                <h1>Transforma tu empresa con tecnología inteligente</h1>
-                <p>Optimiza tus operaciones y descubre nuevas oportunidades para crecer.</p>
-                <p><a class="btn btn-lg btn-dark" href="#">Tecnologia Avanzada</a></p>
+                <h1 id="container-carousel-31">Transforma tu empresa con tecnología inteligente</h1>
+                <p id="container-carousel-32">Optimiza tus operaciones y descubre nuevas oportunidades para crecer.</p>
+                <p><a id="container-carousel-33" class="btn btn-lg btn-dark" href="#">Tecnologia Avanzada</a></p>
               </div>
             </div>
           </div>
@@ -376,18 +380,18 @@
       <div id="prueba" class="mb-5 mb-5  py-5 " style="background-color: #8f939b17;">
         <section id="servicios" class="servicios-section">
           <div class="container">
-            <h2>Nuestra Experiencia</h2>
-            <p class="subtitulo">Hemos creado tecnología a medida para cada necesidad</p>
+            <h2 id="exp-section-title">Nuestra Experiencia</h2>
+            <p class="subtitulo" id="exp-section-subtitle">Hemos creado tecnología a medida para cada necesidad</p>
 
             <div class="row justify-content-center">
               <!-- Servicio 1 -->
               <div class="col-md-4">
                 <div class="card-servicio">
                   <div class="icono-servicio"><i class="bi bi-bank2"></i></div>
-                  <h3>Soluciones Financieras</h3>
-                  <!-- Texto adicional más pequeño -->
-                  <small class="texto-bancos">Con los principales bancos del Perú</small>
-                  <p>Desarrollamos apps y plataformas digitales que transforman la experiencia bancaria.</p>
+                  <h3 id="service1-title">Soluciones Financieras</h3>
+                  <small class="texto-bancos" id="service1-small">Con los principales bancos del Perú</small>
+                  <p id="service1-description">Desarrollamos apps y plataformas digitales que transforman la experiencia
+                    bancaria.</p>
                 </div>
               </div>
 
@@ -395,10 +399,9 @@
               <div class="col-md-4">
                 <div class="card-servicio">
                   <div class="icono-servicio"><i class="bi bi-cart3"></i></div>
-                  <h3>E-Commerce</h3>
-                  <small class="texto-bancos">Con las principales tiendas por departamentos</small>
-
-                  <p>Creamos tiendas online de alto rendimiento que potencian tus ventas.</p>
+                  <h3 id="service2-title">E-Commerce</h3>
+                  <small class="texto-bancos" id="service2-small">Con las principales tiendas por departamentos</small>
+                  <p id="service2-description">Creamos tiendas online de alto rendimiento que potencian tus ventas.</p>
                 </div>
               </div>
 
@@ -406,36 +409,45 @@
               <div class="col-md-4">
                 <div class="card-servicio">
                   <div class="icono-servicio"><i class="bi bi-bar-chart-line"></i></div>
-                  <h3>Data & Analytics</h3>
-                  <small class="texto-bancos">Con los principales bancos del Perú</small>
-
-                  <p>Transformamos tus datos en decisiones estratégicas que impulsan tu crecimiento.</p>
+                  <h3 id="service3-title">Data & Analytics</h3>
+                  <small class="texto-bancos" id="service3-small">Con los principales bancos del Perú</small>
+                  <p id="service3-description">Transformamos tus datos en decisiones estratégicas que impulsan tu
+                    crecimiento.</p>
                 </div>
               </div>
             </div>
           </div>
+
         </section>
 
         <div class="custom-bg">
           <div class="container pt-5 pb-5">
             <div class="row">
+              <h2 class="text-center mb-5 fw-bold" id="services-title-main" style="font-size: 2.5rem;">
+                <span id="services-title-part1" style="color:#800020;">¡Impulsa tu negocio</span>
+                <span id="services-title-part2"> con </span>
+                <span id="services-title-part3" style="color:#ff9800;">aplicaciones web y</span>
+                <span id="services-title-part4" style="color:#ff9800;">móviles</span>
+                <span id="services-title-part5" style="color:#800020;"> innovadoras!</span>
+              </h2>
+
+              <div class="col-lg-1"></div>
+
               <div class="col-lg-12 text-center">
-                <img src="img/Demo/demo4.jpg" alt="Demo" class="w-75 animated-image">
+                <img src="img/demo/demo4.jpg" alt="Demo" class="w-100 animated-image">
               </div>
             </div>
           </div>
         </div>
 
 
-
         <div id="servicios" class="container mt-5 pb-5" style="flex: 1; margin-bottom: 100px;">
           <div class="row">
-            <p class="text-center">
-              Conoce mas de los productos que ofrecemos
-            </p>
-            <h2 class="text-center  mb-5">Softmar Company para tí</h2>
+            <p class="text-center" id="services-subtitle">Conoce más de los productos que ofrecemos</p>
+            <h2 class="text-center mb-5" id="services-title">Softmar Company para tí</h2>
             <div class="col-lg-1"></div>
 
+            <!-- Servicio Aplicaciones Web -->
             <div class="col-lg-2 animated-slide delay-1">
               <div class="d-flex justify-content-center">
                 <div class="rounded-circle"
@@ -447,8 +459,10 @@
                   </svg>
                 </div>
               </div>
-              <h2 class="fw-normal text-center fs-3 mt-2">Aplicaciones Web</h2>
-            </div><!-- /.col-lg-4 -->
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-web">Aplicaciones Web</h2>
+            </div>
+
+            <!-- Servicio Aplicaciones Móviles -->
             <div class="col-lg-2 animated-slide delay-2">
               <div class="d-flex justify-content-center">
                 <div class="rounded-circle"
@@ -460,8 +474,10 @@
                   </svg>
                 </div>
               </div>
-              <h2 class="fw-normal text-center fs-3 mt-2">Aplicaciones Moviles</h2>
-            </div><!-- /.col-lg-4 -->
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-mobile">Aplicaciones Móviles</h2>
+            </div>
+
+            <!-- Servicio Inteligencia Artificial -->
             <div class="col-lg-2 animated-slide delay-3">
               <div class="d-flex justify-content-center">
                 <div class="rounded-circle"
@@ -473,8 +489,10 @@
                   </svg>
                 </div>
               </div>
-              <h2 class="fw-normal text-center fs-3 mt-2">Inteligencia Artificial</h2>
-            </div><!-- /.col-lg-4 -->
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-ai">Inteligencia Artificial</h2>
+            </div>
+
+            <!-- Servicio Análisis de Datos -->
             <div class="col-lg-2 animated-slide delay-4">
               <div class="d-flex justify-content-center">
                 <div class="rounded-circle"
@@ -486,8 +504,10 @@
                   </svg>
                 </div>
               </div>
-              <h2 class="fw-normal text-center fs-3 mt-2">Analisis de datos</h2>
-            </div><!-- /.col-lg-4 -->
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-analytics">Análisis de Datos</h2>
+            </div>
+
+            <!-- Servicio Consultoría Digital -->
             <div class="col-lg-2 animated-slide delay-5">
               <div class="d-flex justify-content-center">
                 <div class="rounded-circle"
@@ -501,58 +521,59 @@
                   </svg>
                 </div>
               </div>
-              <h2 class="fw-normal text-center fs-3 mt-2">Consultoria Digital</h2>
-            </div><!-- /.col-lg-4 -->
-          </div><!-- /.row -->
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-consulting">Consultoría Digital</h2>
+            </div>
+          </div>
         </div>
+
+        <!-- Misión y Visión -->
         <div class="misionvision mb-5">
           <div class="container mt-5 pb-5">
-            <p class="text fs-2">
-              Conoce nuestra <strong>Visión</strong> y <strong>Misión</strong>
+            <p class="text fs-2" id="mission-vision-title">Conoce nuestra <strong>Visión</strong> y
+              <strong>Misión</strong>
             </p>
             <br>
             <div class="row justify-content-center gy-4">
               <div class="col-md-5 p-5 border mx-3 row-transparent">
-                <h3>Misión</h3><br>
-                Transformar digitalmente las empresas con sistemas <strong>ágiles y escalables,</strong> entregando
-                resultados en pocas semanas, sin costos iniciales de infraestructura</strong> y ofreciendo un modelo
-                flexible de <strong>pago por uso.</strong>
+                <h3 id="mission-title">Misión</h3><br>
+                <p id="mission-text">Transformar digitalmente las empresas con sistemas <strong>ágiles y
+                    escalables,</strong> entregando resultados en pocas semanas, sin costos iniciales de infraestructura
+                  y ofreciendo un modelo flexible de <strong>pago por uso.</strong></p>
               </div>
               <div class="col-md-5 p-5 border mx-3 row-transparent">
-                <h3>Visión</h3><br>
-                <p>
-                  Ser reconocidos a nivel internacional por eliminar los costos <strong>iniciales de inversión en
-                    infraestructura</strong>, ofreciendo soluciones tecnológicas de <strong>vanguardia, escalables y
-                    seguras, </strong>que permiten a las empresas optimizar sus operaciones y enfocarse en su
-                  crecimiento sin <strong>barreras tecnológicas ni financieras.</strong>
-                </p>
+                <h3 id="vision-title">Visión</h3><br>
+                <p id="vision-text">Ser reconocidos a nivel internacional por eliminar los costos <strong>iniciales de
+                    inversión en infraestructura</strong>, ofreciendo soluciones tecnológicas de <strong>vanguardia,
+                    escalables y seguras,</strong> que permiten a las empresas optimizar sus operaciones y enfocarse en
+                  su crecimiento sin <strong>barreras tecnológicas ni financieras.</strong></p>
               </div>
             </div>
           </div>
         </div>
+
         <div class="mb-5 position-relative" id="experiencia">
           <div class="container mt-5 pb-5">
             <div class="row featurette">
-        <div class="col-md-12">
-  <h2 class="featurette-heading fw-normal lh-1">
-    Ing. CIP Alex Ramos Mendoza <span class="text-body-secondary">Gerente General</span>
-  </h2>
-  <p class="lead">
-    Nuestro <b>Gerente General</b> se encuentra cursando una <b>Maestría en Administración de Negocios</b> en
-    <b>ESAN Graduate School of Business</b>. Además, cuenta con <b>Certificaciones Internacionales</b> en
-    <b>tecnologías autoescalables de pago por uso</b> y en <b>Metodologías Ágiles de desarrollo de software</b>
-    </p>
-  <p class="lead">
-    Con más de <b>12 años de experiencia</b>, ha liderado proyectos tecnológicos de alto impacto en sectores clave del país,
-    como <b>banca, retail, telecomunicaciones</b> y comercio digital, diseñando soluciones que transforman procesos y generan
-    crecimiento empresarial.
-  </p>
-  <p class="lead">
-    "<b>Bajo su liderazgo</b>, se han alcanzado resultados sobresalientes: <b>reducción del 100% en costos operativos</b>,
-    <b>automatización del 90% de los procesos manuales</b> y mejoras significativas en la <b>productividad y eficiencia</b>
-    de diversas organizaciones."
-  </p>
-</div>
+              <div class="col-md-12">
+                <h2 id="ceo-title" class="featurette-heading fw-normal lh-1">
+                  Ing. CIP Alex Ramos Mendoza <span id="ceo-subtitle" class="text-body-secondary">Gerente General</span>
+                </h2>
+                <p id="ceo-profile" class="lead">
+                  Nuestro <b>Gerente General</b> se encuentra cursando una <b>Maestría en Administración de Negocios</b>
+                  en <b>ESAN Graduate School of Business</b>. Además, cuenta con <b>Certificaciones Internacionales</b>
+                  en
+                  <b>tecnologías autoescalables de pago por uso</b> y en <b>Metodologías Ágiles de desarrollo de
+                    software</b>.
+                </p>
+
+                <p id="ceo-achievements" class="lead">
+                  "<b>Bajo su liderazgo</b>, se han alcanzado resultados sobresalientes:
+                  <b>reducción del 100% en costos operativos</b>,
+                  <b>automatización del 90% de los procesos manuales</b> y mejoras significativas en la
+                  <b>productividad y eficiencia</b> de diversas organizaciones."
+                </p>
+              </div>
+
 
             </div>
           </div>
@@ -578,10 +599,11 @@
           <!-- Columna del texto -->
           <div class="col-12 col-md-6 text-center text-md-start">
             <p class="mb-0">
-              &copy; Copyright 2024 - Todos los derechos reservados<br>
-              2023–2025 Softmar Company, Inc. <br>
-              Telefono: +51 937395625 <br>
+              <span id="footer-copy">&copy; Copyright 2024 - Todos los derechos reservados</span><br>
+              <span id="footer-company">2023–2025 Softmar Company, Inc.</span><br>
+              <span id="footer-phone">Teléfono: +51 937395625</span><br>
             </p>
+
           </div>
         </div>
       </footer>
@@ -607,7 +629,173 @@
 
 
 </body>
+<div style="position: fixed; top: 15px; right: 15px; z-index: 2000;">
+  <div class="dropdown">
+    <button class="btn btn-light border dropdown-toggle shadow-sm" type="button" id="dropdownIdioma"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      🌐 Español
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma">
+      <li><a class="dropdown-item" href="#" data-lang="es">🇪🇸 Español</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="en">🇺🇸 English</a></li>
+    </ul>
+  </div>
+</div>
 <script>
+  const textos = {
+    es: {
+      brand: "Softmar",
+      "nav-experiencia": "Inicio",
+      "nav-servicios": "Servicios",
+      "nav-contactanos": "Contacto",
+      "container-carousel-11": "Súmate al mundo digital",
+      "container-carousel-12": "Lleva tu negocio al siguiente nivel, automatiza tus procesos manuales y maximiza tus ingresos",
+      "container-carousel-13": "Transformación Digital",
+      "container-carousel-21": "Implementa tus aplicaciones sin comprar servidores",
+      "container-carousel-22": "Solo pagas por lo que usas. ¡Ahorra y escala fácilmente!",
+      "container-carousel-23": "Optimiza tus Costos",
+      "container-carousel-31": "Transforma tu empresa con tecnología inteligente",
+      "container-carousel-32": "Optimiza tus operaciones y descubre nuevas oportunidades para crecer.",
+      "container-carousel-33": "Tecnología Avanzada",
+
+      // Nueva sección: Nuestra Experiencia
+      "exp-section-title": "Nuestra Experiencia",
+      "exp-section-subtitle": "Hemos creado tecnología a medida para cada necesidad",
+
+      // Servicio 1
+      "service1-title": "Soluciones Financieras",
+      "service1-small": "Con los principales bancos del Perú",
+      "service1-description": "Desarrollamos apps y plataformas digitales que transforman la experiencia bancaria.",
+
+      // Servicio 2
+      "service2-title": "E-Commerce",
+      "service2-small": "Con las principales tiendas por departamentos",
+      "service2-description": "Creamos tiendas online de alto rendimiento que potencian tus ventas.",
+
+      // Servicio 3
+      "service3-title": "Data & Analytics",
+      "service3-small": "Con los principales bancos del Perú",
+      "service3-description": "Transformamos tus datos en decisiones estratégicas que impulsan tu crecimiento.",
+
+      // Nueva sección: CEO - Perfil y logros
+      "ceo-title": "Ing. CIP Alex Ramos Mendoza",
+      "ceo-subtitle": "Gerente General",
+      "ceo-profile": "Nuestro Gerente General se encuentra cursando una Maestría en Administración de Negocios en ESAN Graduate School of Business. Además, cuenta con Certificaciones Internacionales en tecnologías autoescalables de pago por uso y en Metodologías Ágiles de desarrollo de software.",
+      "ceo-achievements": "\"Bajo su liderazgo, se han alcanzado resultados sobresalientes: reducción del 100% en costos operativos, automatización del 90% de los procesos manuales y mejoras significativas en la productividad y eficiencia de diversas organizaciones.\"",
+
+      // Footer
+      "footer-copy": "&copy; Copyright 2024 - Todos los derechos reservados",
+      "footer-company": "2023–2025 Softmar Company, Inc.",
+      "footer-phone": "Teléfono: +51 937395625",
+      // WhatsAPP
+
+      "wsp-contactanos": "Contáctanos",
+
+      //title
+      "title-main": "Softmar Company - Desarrollo de Software a tu medida",
+
+      // Nueva sección: Productos y Servicios
+      "services-subtitle": "Conoce más de los productos que ofrecemos",
+      "services-title": "Softmar Company para tí",
+      "service-web": "Aplicaciones Web",
+      "service-mobile": "Aplicaciones Móviles",
+      "service-ai": "Inteligencia Artificial",
+      "service-analytics": "Análisis de Datos",
+      "service-consulting": "Consultoría Digital",
+
+      // Misión y Visión
+      "mission-vision-title": "Conoce nuestra Visión y Misión",
+      "mission-title": "Misión",
+      "mission-text": "Transformar digitalmente las empresas con sistemas ágiles y escalables, entregando resultados en pocas semanas, sin costos iniciales de infraestructura y ofreciendo un modelo flexible de pago por uso.",
+      "vision-title": "Visión",
+      "vision-text": "Ser reconocidos a nivel internacional por eliminar los costos iniciales de inversión en infraestructura, ofreciendo soluciones tecnológicas de vanguardia, escalables y seguras, que permiten a las empresas optimizar sus operaciones y enfocarse en su crecimiento sin barreras tecnológicas ni financieras.",
+
+      "services-title-part1": "¡Impulsa tu negocio",
+      "services-title-part2": " con ",
+      "services-title-part3": "aplicaciones web y ",
+      "services-title-part4": "móviles",
+      "services-title-part5": " innovadoras!",
+    },
+
+    en: {
+      brand: "Softmar",
+      "nav-experiencia": "Home",
+      "nav-servicios": "Services",
+      "nav-contactanos": "Contact",
+      "container-carousel-11": "Join the digital world",
+      "container-carousel-12": "Take your business to the next level, automate your manual processes, and maximize your revenue",
+      "container-carousel-13": "Digital Transformation",
+      "container-carousel-21": "Deploy your applications without buying servers",
+      "container-carousel-22": "Pay only for what you use. Save and scale easily!",
+      "container-carousel-23": "Optimize Your Costs",
+      "container-carousel-31": "Transform your business with smart technology",
+      "container-carousel-32": "Optimize your operations and discover new opportunities to grow.",
+      "container-carousel-33": "Advanced Technology",
+
+      // New section: Our Experience
+      "exp-section-title": "Our Experience",
+      "exp-section-subtitle": "We have created tailor-made technology for every need",
+
+      // Service 1
+      "service1-title": "Financial Solutions",
+      "service1-small": "With the main banks of Peru",
+      "service1-description": "We develop apps and digital platforms that transform the banking experience.",
+
+      // Service 2
+      "service2-title": "E-Commerce",
+      "service2-small": "With the leading department stores",
+      "service2-description": "We create high-performance online stores that boost your sales.",
+
+      // Service 3
+      "service3-title": "Data & Analytics",
+      "service3-small": "With the main banks of Peru",
+      "service3-description": "We transform your data into strategic decisions that drive your growth.",
+
+      // New section: CEO - Profile & Achievements
+      "ceo-title": "Eng. CIP Alex Ramos Mendoza",
+      "ceo-subtitle": "General Manager",
+      "ceo-profile": "Our General Manager is currently pursuing a Master's in Business Administration at ESAN Graduate School of Business. Additionally, he holds International Certifications in scalable pay-per-use technologies and Agile software development methodologies.",
+      "ceo-achievements": "\"Under his leadership, outstanding results have been achieved: 100% reduction in operating costs, 90% automation of manual processes, and significant improvements in productivity and efficiency across various organizations.\"",
+      // Footer
+      "footer-copy": "© Copyright 2024 - All rights reserved",
+      "footer-company": "2023–2025 Softmar Company, Inc.",
+      "footer-phone": "Phone: +51 937395625",
+
+      //whatsAPP
+      "wsp-contactanos": "contact us",
+
+      //title
+      "title-main": "Softmar Company - Software development tailored to you",
+      // New section: Products & Services
+      "services-subtitle": "Learn more about the products we offer",
+      "services-title": "Softmar Company for you",
+      "service-web": "Web Applications",
+      "service-mobile": "Mobile Applications",
+      "service-ai": "Artificial Intelligence",
+      "service-analytics": "Data Analytics",
+      "service-consulting": "Digital Consulting",
+
+      // Mission and Vision
+      "mission-vision-title": "Discover our Vision and Mission",
+      "mission-title": "Mission",
+      "mission-text": "Digitally transform companies with agile and scalable systems, delivering results in just a few weeks, without initial infrastructure costs and offering a flexible pay-per-use model.",
+      "vision-title": "Vision",
+      "vision-text": "To be internationally recognized for eliminating initial infrastructure investment costs, offering cutting-edge, scalable, and secure technological solutions that enable companies to optimize operations and focus on growth without technological or financial barriers.",
+
+      "services-title-part1": "Boost your business",
+      "services-title-part2": " with ",
+      "services-title-part3": "web apps and",
+      "services-title-part4": "mobile apps",
+      "services-title-part5": " innovations!",
+
+
+    }
+
+
+
+
+
+  };
 
   // Función para mostrar el carousel y ocultar el spinner
   function showCarousel() {
@@ -619,6 +807,36 @@
   window.onload = function () {
     setTimeout(showCarousel, 500); // Después de 500ms, oculta el spinner y muestra el contenido
   };
+
+  function cambiarIdioma(idioma) {
+    Object.keys(textos[idioma]).forEach(id => {
+      console.log("id", id);
+
+      const elemento = document.getElementById(id);
+      if (elemento) elemento.textContent = textos[idioma][id];
+    });
+  }
+
+  document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Obtener el valor del idioma
+      const lang = this.getAttribute('data-lang');
+
+      // Cambiar el texto del botón
+      const btn = document.getElementById('dropdownIdioma');
+      btn.textContent = lang === 'es' ? '🌐 Español' : '🌐 English';
+
+      // Guardar en localStorage para recordarlo
+      localStorage.setItem('idioma', lang);
+      cambiarIdioma(lang)
+
+    });
+  });
+
+
+
 </script>
 
 </html>
