@@ -1,0 +1,881 @@
+<!doctype html>
+<html lang="en" data-bs-theme="light">
+
+<head>
+  <script src="assets/js/color-modes.js"></script>
+  <!-- JSON-LD para datos estructurados -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Softmar",
+      "url": "https://softmar.pe",
+      "logo": "https://softmar.pe/img/Portal4.png",
+      "description": "Empresa de software dedicada a la creación de aplicaciones personalizadas para tus negocios. Automatizamos procesos con soluciones tecnológicas donde solo pagas por lo que usas.",
+      "sameAs": [
+        "https://www.facebook.com/softmar", 
+        "https://www.instagram.com/softmar"
+      ]
+    }
+    </script>
+
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Empresa de software dedicada a la creación de aplicaciones personalizadas para tus negocios. Automatizamos procesos con soluciones tecnológicas donde solo pagas por lo que usas.">
+  <meta name="author" content="Softmar Company">
+  <meta name="generator" content="">
+  <title id="title-main">Softmar Company - Desarrollo de Software a tu medida</title>
+  <link rel="icon" href="img/Portal4.png" type="image/x-icon" />
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+  <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/carousel/">
+
+
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
+
+  <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .texto-bancos {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: #7b2c2c;
+      /* Verde elegante */
+      margin-top: -5px;
+      margin-bottom: 8px;
+      opacity: 0.85;
+    }
+
+    /* ======== SERVICIOS ======== */
+    .servicios-section {
+      padding: 70px 20px;
+      text-align: center;
+    }
+
+    .servicios-section h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+
+    .servicios-section p.subtitulo {
+      font-size: 1.1rem;
+      color: #666;
+      margin-bottom: 40px;
+    }
+
+    .card-servicio {
+      background: #fff;
+      border-radius: 16px;
+      padding: 25px;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .card-servicio:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+    }
+
+    .icono-servicio {
+      width: 70px;
+      height: 70px;
+      background: #a0141b;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      margin: 0 auto 15px;
+      color: #fff;
+      font-size: 2rem;
+      transition: background 0.3s;
+    }
+
+    .card-servicio:hover .icono-servicio {
+      background: #c41824;
+    }
+
+    .card-servicio h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+
+    .card-servicio p {
+      font-size: 0.95rem;
+    }
+
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+
+    .b-example-divider {
+      width: 100%;
+      height: 3rem;
+      background-color: rgba(0, 0, 0, .1);
+      border: solid rgba(0, 0, 0, .15);
+      border-width: 1px 0;
+      box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+    }
+
+    .b-example-vr {
+      flex-shrink: 0;
+      width: 1.5rem;
+      height: 100vh;
+    }
+
+    .bi {
+      vertical-align: -.125em;
+      fill: currentColor;
+    }
+
+    .nav-scroller {
+      position: relative;
+      z-index: 2;
+      height: 2.75rem;
+      overflow-y: hidden;
+    }
+
+    .nav-scroller .nav {
+      display: flex;
+      flex-wrap: nowrap;
+      padding-bottom: 1rem;
+      margin-top: -1px;
+      overflow-x: auto;
+      text-align: center;
+      white-space: nowrap;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .btn-bd-primary {
+      --bd-violet-bg: #25D366;
+      --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+      --bs-btn-font-weight: 600;
+      --bs-btn-color: var(--bs-white);
+      --bs-btn-bg: var(--bd-violet-bg);
+      --bs-btn-border-color: var(--bd-violet-bg);
+      --bs-btn-hover-color: var(--bs-white);
+      --bs-btn-hover-bg: #6528e0;
+      --bs-btn-hover-border-color: #6528e0;
+      --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+      --bs-btn-active-color: var(--bs-btn-hover-color);
+      --bs-btn-active-bg: #5a23c8;
+      --bs-btn-active-border-color: #5a23c8;
+    }
+
+    .bd-mode-toggle {
+      z-index: 1500;
+    }
+
+    .bd-mode-toggle .dropdown-menu .active .bi {
+      display: block !important;
+    }
+    /* 🎨 Botón verde WhatsApp */
+.btn-wsp {
+  background-color: #25D366; /* Verde oficial WhatsApp */
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+}
+
+/* Hover con efecto más juvenil */
+.btn-wsp:hover {
+  background-color: #1ebe5d;
+  transform: scale(1.08);
+  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.6);
+}
+
+/* SVG en blanco */
+.btn-wsp svg {
+  margin-right: 6px;
+  fill: white;
+}
+
+/* Ajuste para pantallas pequeñas */
+@media (max-width: 768px) {
+  .btn-wsp {
+    font-size: 14px;
+    padding: 8px 14px;
+  }
+}
+
+  </style>
+
+
+  <!-- Custom styles for this template -->
+  <link href="carousel/carousel.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <div id="init" class="init">
+
+    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+      <symbol id="check2" viewBox="0 0 16 16">
+        <path
+          d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+      </symbol>
+      <symbol id="circle-half" viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+      </symbol>
+      <symbol id="moon-stars-fill" viewBox="0 0 16 16">
+        <path
+          d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278z" />
+        <path
+          d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z" />
+      </symbol>
+      <symbol id="sun-fill" viewBox="0 0 16 16">
+        <path
+          d="M8 12a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+      </symbol>
+    </svg>
+
+<div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle">
+  <button class="btn btn-wsp py-2 d-flex align-items-center shadow-lg" id="bd-theme" type="button"
+    aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)"
+    onclick="window.location.href='https://wa.me/51937395625';">
+    <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-whatsapp"
+      viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.892 7.892 0 0 0 8.003.002a7.99 7.99 0 0 0-6.8 11.977L.06 15.94l4.066-1.07A7.96 7.96 0 0 0 8.003 16c4.412 0 8.002-3.588 8.002-8.003a7.926 7.926 0 0 0-2.404-5.671ZM8.003 14.5a6.499 6.499 0 0 1-3.321-.9l-.237-.141-2.415.636.646-2.355-.156-.243a6.473 6.473 0 1 1 5.483 2.997Zm3.527-4.89c-.2-.1-1.18-.581-1.362-.647-.182-.067-.316-.1-.45.1s-.515.647-.633.781c-.117.133-.233.15-.433.05-.2-.1-.844-.31-1.608-.99-.594-.53-.994-1.18-1.11-1.38-.117-.2-.013-.308.088-.408.09-.09.2-.233.3-.35.1-.117.133-.2.2-.333.067-.133.033-.25-.017-.35-.05-.1-.45-1.09-.616-1.49-.16-.39-.323-.34-.45-.35l-.383-.007c-.133 0-.35.05-.533.25-.182.2-.7.683-.7 1.666 0 .983.717 1.934.816 2.067.1.133 1.41 2.15 3.415 3.013.478.206.85.329 1.14.42.477.15.91.13 1.253.079.383-.057 1.18-.48 1.35-.94.167-.46.167-.856.116-.94-.05-.083-.183-.133-.383-.233Z" />
+    </svg>
+    <span class="ms-2 fw-bold" id="wsp-contactanos">Contáctanos</span>
+  </button>
+</div>
+
+
+
+    <header data-bs-theme="light">
+      <nav class="navbar navbar-expand-md navbar-light fixed-top bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand banner-text" href="#">
+            <img src="img/Portal4.png" alt="Logo" style="
+            margin-left: 10px;
+            height: 40px;
+            margin-right: 5px;
+            vertical-align: middle;
+          " />
+            Softmar Company
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav menu-nav ">
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" aria-current="page" id="nav-experiencia"
+                  href="#experiencia">Experiencia</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" id="nav-servicios" href="#servicios">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link fw-bold text-dark" id="nav-contactanos" href="contactanos.html"
+                  aria-disabled="true">contáctanos</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+      </nav>
+    </header>
+
+    <main>
+
+      <div id="myCarousel" class="carousel slide mb-6" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
+            aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+
+          <div class="carousel-item active position-relative">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <defs>
+                <linearGradient id="gradient" x1="100%" y1="100%" x2="30%" y2="50%">
+                  <stop offset="0%" stop-color="black" />
+                  <stop offset="100%" stop-color="#800612" />
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#gradient)" />
+            </svg>
+
+            <!-- Icono en la esquina superior derecha -->
+            <div class="icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-piggy-bank" viewBox="0 0 16 16">
+                <path
+                  d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0m1.138-1.496A6.6 6.6 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.6 7.6 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962" />
+                <path fill-rule="evenodd"
+                  d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069q0-.218-.02-.431c.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a1 1 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.74.74 0 0 0-.375.562c-.024.243.082.48.32.654a2 2 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595M2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.6 6.6 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.65 4.65 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393m12.621-.857a.6.6 0 0 1-.098.21l-.044-.025c-.146-.09-.157-.175-.152-.223a.24.24 0 0 1 .117-.173c.049-.027.08-.021.113.012a.2.2 0 0 1 .064.199" />
+              </svg>
+            </div>
+
+
+            <div class="container">
+              <div class="carousel-caption text-start">
+                <h1 id="container-carousel-11">Sumate al mundo digital</h1>
+                <p id="container-carousel-12" class="opacity-75">Lleva tu negocio al siguiente nivel, automatiza tus
+                  procesos manuales y maximiza
+                  tus ingresos </p>
+                <p><a id="container-carousel-13" class="btn btn-lg btn-dark" href="#">Transformación Digital</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="#343a40" /> <!-- en vez de var(--bs-dark) -->
+            </svg>
+            <div class="container">
+              <div class="carousel-caption">
+                <h1 id="container-carousel-21">Implementa tus aplicaciones sin comprar servidores</h1>
+                <p id="container-carousel-22">Solo pagas por lo que usas. ¡Ahorra y escala fácilmente! </p>
+                <p><a id="container-carousel-23" class="btn btn-lg custom-btn" href="#">Optimiza tus Costos</a></p>
+              </div>
+            </div>
+            <!-- Icono en la esquina superior derecha -->
+            <div class="icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
+                class="bi bi-phone-flip" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+              </svg>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false">
+              <rect width="100%" height="100%" fill="var(--bs-secondary-color)" />
+              <defs>
+                <linearGradient id="gradient-second" x1="100%" y1="100%" x2="30%" y2="50%">
+                  <stop offset="0%" stop-color="#800612" />
+                  <stop offset="100%" stop-color="#800612" />
+                </linearGradient>
+              </defs>
+              <rect width="100%" height="100%" fill="url(#gradient-second)" />
+            </svg>
+            <!-- Icono en la esquina superior derecha -->
+            <div class="icon-container">
+              <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-globe"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+              </svg>
+            </div>
+            <div class="container">
+              <div class="carousel-caption text-end">
+                <h1 id="container-carousel-31">Transforma tu empresa con tecnología inteligente</h1>
+                <p id="container-carousel-32">Optimiza tus operaciones y descubre nuevas oportunidades para crecer.</p>
+                <p><a id="container-carousel-33" class="btn btn-lg btn-dark" href="#">Tecnologia Avanzada</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- Marketing messaging and featurettes
+    ================================================== -->
+      <!-- Wrap the rest of the page in another container to center all the content. -->
+
+
+      <div id="prueba" class="mb-5 mb-5  py-5 " style="background-color: #8f939b17;">
+        <section id="servicios" class="servicios-section">
+          <div class="container">
+            <h2 id="exp-section-title">Nuestra Experiencia</h2>
+            <p class="subtitulo" id="exp-section-subtitle">Hemos creado tecnología a medida para cada necesidad</p>
+
+            <div class="row justify-content-center">
+              <!-- Servicio 1 -->
+              <div class="col-md-4">
+                <div class="card-servicio">
+                  <div class="icono-servicio"><i class="bi bi-bank2"></i></div>
+                  <h3 id="service1-title">Soluciones Financieras</h3>
+                  <small class="texto-bancos" id="service1-small">Con los principales bancos del Perú</small>
+                  <p id="service1-description">Desarrollamos apps y plataformas digitales que transforman la experiencia
+                    bancaria.</p>
+                </div>
+              </div>
+
+              <!-- Servicio 2 -->
+              <div class="col-md-4">
+                <div class="card-servicio">
+                  <div class="icono-servicio"><i class="bi bi-cart3"></i></div>
+                  <h3 id="service2-title">E-Commerce</h3>
+                  <small class="texto-bancos" id="service2-small">Con las principales tiendas por departamentos</small>
+                  <p id="service2-description">Creamos tiendas online de alto rendimiento que potencian tus ventas.</p>
+                </div>
+              </div>
+
+              <!-- Servicio 3 -->
+              <div class="col-md-4">
+                <div class="card-servicio">
+                  <div class="icono-servicio"><i class="bi bi-bar-chart-line"></i></div>
+                  <h3 id="service3-title">Data & Analytics</h3>
+                  <small class="texto-bancos" id="service3-small">Con los principales bancos del Perú</small>
+                  <p id="service3-description">Transformamos tus datos en decisiones estratégicas que impulsan tu
+                    crecimiento.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
+
+        <div class="custom-bg">
+          <div class="container pt-5 pb-5">
+            <div class="row">
+              <h2 class="text-center mb-5 fw-bold" id="services-title-main" style="font-size: 2.5rem;">
+                <span id="services-title-part1" style="color:#800020;">¡Impulsa tu negocio</span>
+                <span id="services-title-part2"> con </span>
+                <span id="services-title-part3" style="color:#ff9800;">aplicaciones web y</span>
+                <span id="services-title-part4" style="color:#ff9800;">móviles</span>
+                <span id="services-title-part5" style="color:#800020;"> innovadoras!</span>
+              </h2>
+
+              <div class="col-lg-1"></div>
+
+              <div class="col-lg-12 text-center">
+                <img src="img/demo/demo4.jpg" alt="Demo" class="w-100 animated-image">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div id="servicios" class="container mt-5 pb-5" style="flex: 1; margin-bottom: 100px;">
+          <div class="row">
+            <p class="text-center" id="services-subtitle">Conoce más de los productos que ofrecemos</p>
+            <h2 class="text-center mb-5" id="services-title">Softmar Company para tí</h2>
+            <div class="col-lg-1"></div>
+
+            <!-- Servicio Aplicaciones Web -->
+            <div class="col-lg-2 animated-slide delay-1">
+              <div class="d-flex justify-content-center">
+                <div class="rounded-circle"
+                  style="width: 140px; height: 140px; background-color: #000000 ; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-globe2" viewBox="0 0 16 16" style="color: white;">
+                    <path
+                      d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855q-.215.403-.395.872c.705.157 1.472.257 2.282.287zM4.249 3.539q.214-.577.481-1.078a7 7 0 0 1 .597-.933A7 7 0 0 0 3.051 3.05q.544.277 1.198.49zM3.509 7.5c.036-1.07.188-2.087.436-3.008a9 9 0 0 1-1.565-.667A6.96 6.96 0 0 0 1.018 7.5zm1.4-2.741a12.3 12.3 0 0 0-.4 2.741H7.5V5.091c-.91-.03-1.783-.145-2.591-.332M8.5 5.09V7.5h2.99a12.3 12.3 0 0 0-.399-2.741c-.808.187-1.681.301-2.591.332zM4.51 8.5c.035.987.176 1.914.399 2.741A13.6 13.6 0 0 1 7.5 10.91V8.5zm3.99 0v2.409c.91.03 1.783.145 2.591.332.223-.827.364-1.754.4-2.741zm-3.282 3.696q.18.469.395.872c.552 1.035 1.218 1.65 1.887 1.855V11.91c-.81.03-1.577.13-2.282.287zm.11 2.276a7 7 0 0 1-.598-.933 9 9 0 0 1-.481-1.079 8.4 8.4 0 0 0-1.198.49 7 7 0 0 0 2.276 1.522zm-1.383-2.964A13.4 13.4 0 0 1 3.508 8.5h-2.49a6.96 6.96 0 0 0 1.362 3.675c.47-.258.995-.482 1.565-.667m6.728 2.964a7 7 0 0 0 2.275-1.521 8.4 8.4 0 0 0-1.197-.49 9 9 0 0 1-.481 1.078 7 7 0 0 1-.597.933M8.5 11.909v3.014c.67-.204 1.335-.82 1.887-1.855q.216-.403.395-.872A12.6 12.6 0 0 0 8.5 11.91zm3.555-.401c.57.185 1.095.409 1.565.667A6.96 6.96 0 0 0 14.982 8.5h-2.49a13.4 13.4 0 0 1-.437 3.008M14.982 7.5a6.96 6.96 0 0 0-1.362-3.675c-.47.258-.995.482-1.565.667.248.92.4 1.938.437 3.008zM11.27 2.461q.266.502.482 1.078a8.4 8.4 0 0 0 1.196-.49 7 7 0 0 0-2.275-1.52c.218.283.418.597.597.932m-.488 1.343a8 8 0 0 0-.395-.872C9.835 1.897 9.17 1.282 8.5 1.077V4.09c.81-.03 1.577-.13 2.282-.287z" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-web">Aplicaciones Web</h2>
+            </div>
+
+            <!-- Servicio Aplicaciones Móviles -->
+            <div class="col-lg-2 animated-slide delay-2">
+              <div class="d-flex justify-content-center">
+                <div class="rounded-circle"
+                  style="width: 140px; height: 140px; background-color: #000000 ; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    class="bi bi-phone-flip" viewBox="0 0 16 16" style="color: white;">
+                    <path fill-rule="evenodd"
+                      d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-mobile">Aplicaciones Móviles</h2>
+            </div>
+
+            <!-- Servicio Inteligencia Artificial -->
+            <div class="col-lg-2 animated-slide delay-3">
+              <div class="d-flex justify-content-center">
+                <div class="rounded-circle"
+                  style="width: 140px; height: 140px; background-color: #000000 ; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" style="color: white;" width="60" height="60"
+                    fill="currentColor" class="bi bi-filetype-ai" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M14 4.5V14a2 2 0 0 1-2 2H6v-1h6a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5zM1.113 14.82.8 15.85H0l1.342-3.999h.926l1.336 3.999h-.841l-.314-1.028H1.113Zm1.178-.588-.49-1.617h-.034l-.49 1.617zm2.425-2.382v3.999h-.791V11.85h.79Z" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-ai">Inteligencia Artificial</h2>
+            </div>
+
+            <!-- Servicio Análisis de Datos -->
+            <div class="col-lg-2 animated-slide delay-4">
+              <div class="d-flex justify-content-center">
+                <div class="rounded-circle"
+                  style="width: 140px; height: 140px; background-color: #000000 ; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    style="color: white;" class="bi bi-bar-chart" viewBox="0 0 16 16">
+                    <path
+                      d="M4 11H2v3h2zm5-4H7v7h2zm5-5v12h-2V2zm-2-1a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h2a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM6 7a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v7a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1zm-5 4a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1z" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-analytics">Análisis de Datos</h2>
+            </div>
+
+            <!-- Servicio Consultoría Digital -->
+            <div class="col-lg-2 animated-slide delay-5">
+              <div class="d-flex justify-content-center">
+                <div class="rounded-circle"
+                  style="width: 140px; height: 140px; background-color: #000000 ; display: flex; justify-content: center; align-items: center;">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor"
+                    style="color: white;" class="bi bi-database-down" viewBox="0 0 16 16">
+                    <path
+                      d="M12.5 9a3.5 3.5 0 1 1 0 7 3.5 3.5 0 0 1 0-7m.354 5.854 1.5-1.5a.5.5 0 0 0-.708-.708l-.646.647V10.5a.5.5 0 0 0-1 0v2.793l-.646-.647a.5.5 0 0 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0" />
+                    <path
+                      d="M12.096 6.223A5 5 0 0 0 13 5.698V7c0 .289-.213.654-.753 1.007a4.5 4.5 0 0 1 1.753.25V4c0-1.007-.875-1.755-1.904-2.223C11.022 1.289 9.573 1 8 1s-3.022.289-4.096.777C2.875 2.245 2 2.993 2 4v9c0 1.007.875 1.755 1.904 2.223C4.978 15.71 6.427 16 8 16c.536 0 1.058-.034 1.555-.097a4.5 4.5 0 0 1-.813-.927Q8.378 15 8 15c-1.464 0-2.766-.27-3.682-.687C3.356 13.875 3 13.373 3 13v-1.302c.271.202.58.378.904.525C4.978 12.71 6.427 13 8 13h.027a4.6 4.6 0 0 1 0-1H8c-1.464 0-2.766-.27-3.682-.687C3.356 10.875 3 10.373 3 10V8.698c.271.202.58.378.904.525C4.978 9.71 6.427 10 8 10q.393 0 .774-.024a4.5 4.5 0 0 1 1.102-1.132C9.298 8.944 8.666 9 8 9c-1.464 0-2.766-.27-3.682-.687C3.356 7.875 3 7.373 3 7V5.698c.271.202.58.378.904.525C4.978 6.711 6.427 7 8 7s3.022-.289 4.096-.777M3 4c0-.374.356-.875 1.318-1.313C5.234 2.271 6.536 2 8 2s2.766.27 3.682.687C12.644 3.125 13 3.627 13 4c0 .374-.356.875-1.318 1.313C10.766 5.729 9.464 6 8 6s-2.766-.27-3.682-.687C3.356 4.875 3 4.373 3 4" />
+                  </svg>
+                </div>
+              </div>
+              <h2 class="fw-normal text-center fs-3 mt-2" id="service-consulting">Consultoría Digital</h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Misión y Visión -->
+        <div class="misionvision mb-5">
+          <div class="container mt-5 pb-5">
+            <p class="text fs-2" id="mission-vision-title">Conoce nuestra <strong>Visión</strong> y
+              <strong>Misión</strong>
+            </p>
+            <br>
+            <div class="row justify-content-center gy-4">
+              <div class="col-md-5 p-5 border mx-3 row-transparent">
+                <h3 id="mission-title">Misión</h3><br>
+                <p id="mission-text">Transformar digitalmente las empresas con sistemas <strong>ágiles y
+                    escalables,</strong> entregando resultados en pocas semanas, sin costos iniciales de infraestructura
+                  y ofreciendo un modelo flexible de <strong>pago por uso.</strong></p>
+              </div>
+              <div class="col-md-5 p-5 border mx-3 row-transparent">
+                <h3 id="vision-title">Visión</h3><br>
+                <p id="vision-text">Ser reconocidos a nivel internacional por eliminar los costos <strong>iniciales de
+                    inversión en infraestructura</strong>, ofreciendo soluciones tecnológicas de <strong>vanguardia,
+                    escalables y seguras,</strong> que permiten a las empresas optimizar sus operaciones y enfocarse en
+                  su crecimiento sin <strong>barreras tecnológicas ni financieras.</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mb-5 position-relative" id="experiencia">
+          <div class="container mt-5 pb-5">
+            <div class="row featurette">
+              <div class="col-md-12">
+                <h2 id="ceo-title" class="featurette-heading fw-normal lh-1">
+                  Ing. CIP Alex Ramos Mendoza <span id="ceo-subtitle" class="text-body-secondary">Gerente General</span>
+                </h2>
+                <p id="ceo-profile" class="lead">
+                  Nuestro <b>Gerente General</b> se encuentra cursando una <b>Maestría en Administración de Negocios</b>
+                  en <b>ESAN Graduate School of Business</b>. Además, cuenta con <b>Certificaciones Internacionales</b>
+                  en
+                  <b>tecnologías autoescalables de pago por uso</b> y en <b>Metodologías Ágiles de desarrollo de
+                    software</b>.
+                </p>
+
+                <p id="ceo-achievements" class="lead">
+                  "<b>Bajo su liderazgo</b>, se han alcanzado resultados sobresalientes:
+                  <b>reducción del 100% en costos operativos</b>,
+                  <b>automatización del 90% de los procesos manuales</b> y mejoras significativas en la
+                  <b>productividad y eficiencia</b> de diversas organizaciones."
+                </p>
+              </div>
+
+
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Ícono en la esquina inferior derecha -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor"
+          class="bi bi-phone-flip icono" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M11 1H5a1 1 0 0 0-1 1v6a.5.5 0 0 1-1 0V2a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v6a.5.5 0 0 1-1 0V2a1 1 0 0 0-1-1m1 13a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1v-2a.5.5 0 0 0-1 0v2a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2a.5.5 0 0 0-1 0zM1.713 7.954a.5.5 0 1 0-.419-.908c-.347.16-.654.348-.882.57C.184 7.842 0 8.139 0 8.5c0 .546.408.94.823 1.201.44.278 1.043.51 1.745.696C3.978 10.773 5.898 11 8 11q.148 0 .294-.002l-1.148 1.148a.5.5 0 0 0 .708.708l2-2a.5.5 0 0 0 0-.708l-2-2a.5.5 0 1 0-.708.708l1.145 1.144L8 10c-2.04 0-3.87-.221-5.174-.569-.656-.175-1.151-.374-1.47-.575C1.012 8.639 1 8.506 1 8.5c0-.003 0-.059.112-.17.115-.112.31-.242.6-.376Zm12.993-.908a.5.5 0 0 0-.419.908c.292.134.486.264.6.377.113.11.113.166.113.169s0 .065-.13.187c-.132.122-.352.26-.677.4-.645.28-1.596.523-2.763.687a.5.5 0 0 0 .14.99c1.212-.17 2.26-.43 3.02-.758.38-.164.713-.357.96-.587.246-.229.45-.537.45-.919 0-.362-.184-.66-.412-.883s-.535-.411-.882-.571M7.5 2a.5.5 0 0 0 0 1h1a.5.5 0 0 0 0-1z" />
+        </svg>
+      </div>
+
+      <!-- FOOTER -->
+      <footer class="container py-4">
+        <div class="row align-items-center">
+          <!-- Columna del logo -->
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <img src="img/Portal1.jpg" alt="Logo Softmar" class="img-fluid w-100" style="max-width: 500px;">
+          </div>
+
+          <!-- Columna del texto -->
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <p class="mb-0">
+              <span id="footer-copy">&copy; Copyright 2024 - Todos los derechos reservados</span><br>
+              <span id="footer-company">2023–2025 Softmar Company, Inc.</span><br>
+              <span id="footer-phone">Teléfono: +51 937395625</span><br>
+            </p>
+
+          </div>
+        </div>
+      </footer>
+
+
+  </div>
+
+
+
+
+  </div>
+
+
+
+
+  </main>
+  <script src="assets/dist/js/bootstrap.bundle.min.js"></script>
+
+  </div>
+  <div id="spinner" class="text-center">
+    <img src="img/Portal4.png" alt="Cargando..." class="spinner-logo" />
+  </div>
+
+
+</body>
+<div style="position: fixed; top: 15px; right: 15px; z-index: 2000;">
+  <div class="dropdown">
+    <button class="btn btn-light border dropdown-toggle shadow-sm" type="button" id="dropdownIdioma"
+      data-bs-toggle="dropdown" aria-expanded="false">
+      🌐 Español
+    </button>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownIdioma">
+      <li><a class="dropdown-item" href="#" data-lang="es">🇪🇸 Español</a></li>
+      <li><a class="dropdown-item" href="#" data-lang="en">🇺🇸 English</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  const textos = {
+    es: {
+      brand: "Softmar",
+      "nav-experiencia": "Inicio",
+      "nav-servicios": "Servicios",
+      "nav-contactanos": "Contacto",
+      "container-carousel-11": "Súmate al mundo digital",
+      "container-carousel-12": "Lleva tu negocio al siguiente nivel, automatiza tus procesos manuales y maximiza tus ingresos",
+      "container-carousel-13": "Transformación Digital",
+      "container-carousel-21": "Implementa tus aplicaciones sin comprar servidores",
+      "container-carousel-22": "Solo pagas por lo que usas. ¡Ahorra y escala fácilmente!",
+      "container-carousel-23": "Optimiza tus Costos",
+      "container-carousel-31": "Transforma tu empresa con tecnología inteligente",
+      "container-carousel-32": "Optimiza tus operaciones y descubre nuevas oportunidades para crecer.",
+      "container-carousel-33": "Tecnología Avanzada",
+
+      // Nueva sección: Nuestra Experiencia
+      "exp-section-title": "Nuestra Experiencia",
+      "exp-section-subtitle": "Hemos creado tecnología a medida para cada necesidad",
+
+      // Servicio 1
+      "service1-title": "Soluciones Financieras",
+      "service1-small": "Con los principales bancos del Perú",
+      "service1-description": "Desarrollamos apps y plataformas digitales que transforman la experiencia bancaria.",
+
+      // Servicio 2
+      "service2-title": "E-Commerce",
+      "service2-small": "Con las principales tiendas por departamentos",
+      "service2-description": "Creamos tiendas online de alto rendimiento que potencian tus ventas.",
+
+      // Servicio 3
+      "service3-title": "Data & Analytics",
+      "service3-small": "Con los principales bancos del Perú",
+      "service3-description": "Transformamos tus datos en decisiones estratégicas que impulsan tu crecimiento.",
+
+      // Nueva sección: CEO - Perfil y logros
+      "ceo-title": "Ing. CIP Alex Ramos Mendoza",
+      "ceo-subtitle": "Gerente General",
+      "ceo-profile": "Nuestro Gerente General se encuentra cursando una Maestría en Administración de Negocios en ESAN Graduate School of Business. Además, cuenta con Certificaciones Internacionales en tecnologías autoescalables de pago por uso y en Metodologías Ágiles de desarrollo de software.",
+      "ceo-achievements": "\"Bajo su liderazgo, se han alcanzado resultados sobresalientes: reducción del 100% en costos operativos, automatización del 90% de los procesos manuales y mejoras significativas en la productividad y eficiencia de diversas organizaciones.\"",
+
+      // Footer
+      "footer-copy": "&copy; Copyright 2024 - Todos los derechos reservados",
+      "footer-company": "2023–2025 Softmar Company, Inc.",
+      "footer-phone": "Teléfono: +51 937395625",
+      // WhatsAPP
+
+      "wsp-contactanos": "Contáctanos",
+
+      //title
+      "title-main": "Softmar Company - Desarrollo de Software a tu medida",
+
+      // Nueva sección: Productos y Servicios
+      "services-subtitle": "Conoce más de los productos que ofrecemos",
+      "services-title": "Softmar Company para tí",
+      "service-web": "Aplicaciones Web",
+      "service-mobile": "Aplicaciones Móviles",
+      "service-ai": "Inteligencia Artificial",
+      "service-analytics": "Análisis de Datos",
+      "service-consulting": "Consultoría Digital",
+
+      // Misión y Visión
+      "mission-vision-title": "Conoce nuestra Visión y Misión",
+      "mission-title": "Misión",
+      "mission-text": "Transformar digitalmente las empresas con sistemas ágiles y escalables, entregando resultados en pocas semanas, sin costos iniciales de infraestructura y ofreciendo un modelo flexible de pago por uso.",
+      "vision-title": "Visión",
+      "vision-text": "Ser reconocidos a nivel internacional por eliminar los costos iniciales de inversión en infraestructura, ofreciendo soluciones tecnológicas de vanguardia, escalables y seguras, que permiten a las empresas optimizar sus operaciones y enfocarse en su crecimiento sin barreras tecnológicas ni financieras.",
+
+      "services-title-part1": "¡Impulsa tu negocio",
+      "services-title-part2": " con ",
+      "services-title-part3": "aplicaciones web y ",
+      "services-title-part4": "móviles",
+      "services-title-part5": " innovadoras!",
+    },
+
+    en: {
+      brand: "Softmar",
+      "nav-experiencia": "Home",
+      "nav-servicios": "Services",
+      "nav-contactanos": "Contact",
+      "container-carousel-11": "Join the digital world",
+      "container-carousel-12": "Take your business to the next level, automate your manual processes, and maximize your revenue",
+      "container-carousel-13": "Digital Transformation",
+      "container-carousel-21": "Deploy your applications without buying servers",
+      "container-carousel-22": "Pay only for what you use. Save and scale easily!",
+      "container-carousel-23": "Optimize Your Costs",
+      "container-carousel-31": "Transform your business with smart technology",
+      "container-carousel-32": "Optimize your operations and discover new opportunities to grow.",
+      "container-carousel-33": "Advanced Technology",
+
+      // New section: Our Experience
+      "exp-section-title": "Our Experience",
+      "exp-section-subtitle": "We have created tailor-made technology for every need",
+
+      // Service 1
+      "service1-title": "Financial Solutions",
+      "service1-small": "With the main banks of Peru",
+      "service1-description": "We develop apps and digital platforms that transform the banking experience.",
+
+      // Service 2
+      "service2-title": "E-Commerce",
+      "service2-small": "With the leading department stores",
+      "service2-description": "We create high-performance online stores that boost your sales.",
+
+      // Service 3
+      "service3-title": "Data & Analytics",
+      "service3-small": "With the main banks of Peru",
+      "service3-description": "We transform your data into strategic decisions that drive your growth.",
+
+      // New section: CEO - Profile & Achievements
+      "ceo-title": "Eng. CIP Alex Ramos Mendoza",
+      "ceo-subtitle": "General Manager",
+      "ceo-profile": "Our General Manager is currently pursuing a Master's in Business Administration at ESAN Graduate School of Business. Additionally, he holds International Certifications in scalable pay-per-use technologies and Agile software development methodologies.",
+      "ceo-achievements": "\"Under his leadership, outstanding results have been achieved: 100% reduction in operating costs, 90% automation of manual processes, and significant improvements in productivity and efficiency across various organizations.\"",
+      // Footer
+      "footer-copy": "© Copyright 2024 - All rights reserved",
+      "footer-company": "2023–2025 Softmar Company, Inc.",
+      "footer-phone": "Phone: +51 937395625",
+
+      //whatsAPP
+      "wsp-contactanos": "contact us",
+
+      //title
+      "title-main": "Softmar Company - Software development tailored to you",
+      // New section: Products & Services
+      "services-subtitle": "Learn more about the products we offer",
+      "services-title": "Softmar Company for you",
+      "service-web": "Web Applications",
+      "service-mobile": "Mobile Applications",
+      "service-ai": "Artificial Intelligence",
+      "service-analytics": "Data Analytics",
+      "service-consulting": "Digital Consulting",
+
+      // Mission and Vision
+      "mission-vision-title": "Discover our Vision and Mission",
+      "mission-title": "Mission",
+      "mission-text": "Digitally transform companies with agile and scalable systems, delivering results in just a few weeks, without initial infrastructure costs and offering a flexible pay-per-use model.",
+      "vision-title": "Vision",
+      "vision-text": "To be internationally recognized for eliminating initial infrastructure investment costs, offering cutting-edge, scalable, and secure technological solutions that enable companies to optimize operations and focus on growth without technological or financial barriers.",
+
+      "services-title-part1": "Boost your business",
+      "services-title-part2": " with ",
+      "services-title-part3": "web apps and",
+      "services-title-part4": "mobile apps",
+      "services-title-part5": " innovations!",
+
+
+    }
+
+
+
+
+
+  };
+
+  // Función para mostrar el carousel y ocultar el spinner
+  function showCarousel() {
+    document.getElementById("init").classList.remove("init"); // Quita la clase 'loading' para mostrar el contenido
+    document.getElementById("spinner").style.display = "none"; // Oculta el spinner
+  }
+
+  // Mostrar el spinner inicialmente
+  window.onload = function () {
+    setTimeout(showCarousel, 500); // Después de 500ms, oculta el spinner y muestra el contenido
+  };
+
+  function cambiarIdioma(idioma) {
+    Object.keys(textos[idioma]).forEach(id => {
+      console.log("id", id);
+
+      const elemento = document.getElementById(id);
+      if (elemento) elemento.textContent = textos[idioma][id];
+    });
+  }
+
+  document.querySelectorAll('.dropdown-item').forEach(item => {
+    item.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      // Obtener el valor del idioma
+      const lang = this.getAttribute('data-lang');
+
+      // Cambiar el texto del botón
+      const btn = document.getElementById('dropdownIdioma');
+      btn.textContent = lang === 'es' ? '🌐 Español' : '🌐 English';
+
+      // Guardar en localStorage para recordarlo
+      localStorage.setItem('idioma', lang);
+      cambiarIdioma(lang)
+
+    });
+  });
+
+
+
+</script>
+
+</html>
