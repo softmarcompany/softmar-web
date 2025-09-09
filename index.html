@@ -1,308 +1,312 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Softmar — Servicios TI 2025 | IA · Cloud · Seguridad · RPA</title>
-    <meta
-      name="description"
-      content="Softmar — Soluciones digitales 2025: IA, Low-code, Cloud, Ciberseguridad, RPA, RMM, Customer Success y paquetes SaaS para pymes y empresas."
-    />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <style>
-      /* 🎨 Botón verde WhatsApp */
-      /* Botón verde WhatsApp */
-      .btn-wsp {
-        background-color: #25d366; /* Verde oficial WhatsApp */
-        color: #fff;
-        font-weight: bold;
-        border: none;
-        border-radius: 50px;
-        padding: 10px 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transition: all 0.3s ease;
-        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Softmar — Servicios TI 2025 | IA · Cloud · Seguridad · RPA</title>
+  <meta name="description"
+    content="Softmar — Soluciones digitales 2025: IA, Low-code, Cloud, Ciberseguridad, RPA, RMM, Customer Success y paquetes SaaS para pymes y empresas." />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* 🎨 Botón verde WhatsApp */
+    /* Botón verde WhatsApp */
+    .btn-wsp {
+      background-color: #25d366;
+      /* Verde oficial WhatsApp */
+      color: #fff;
+      font-weight: bold;
+      border: none;
+      border-radius: 50px;
+      padding: 10px 18px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.3s ease;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.5);
+    }
+
+    /* Efecto hover juvenil */
+    .btn-wsp:hover {
+      background-color: #1ebe5d;
+      transform: scale(1.08);
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.7);
+    }
+
+    /* SVG blanco */
+    .btn-wsp svg {
+      margin-right: 6px;
+      fill: #fff;
+    }
+
+    /* Hacemos que el botón flote sobre todo */
+    .wsp-floating {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 99999 !important;
+      /* Prioridad máxima */
+    }
+
+    /* Efecto vibración para llamar la atención */
+    @keyframes vibrar {
+      0% {
+        transform: rotate(0deg);
       }
 
-      /* Efecto hover juvenil */
-      .btn-wsp:hover {
-        background-color: #1ebe5d;
-        transform: scale(1.08);
-        box-shadow: 0 10px 25px rgba(37, 211, 102, 0.7);
+      20% {
+        transform: rotate(5deg);
       }
 
-      /* SVG blanco */
-      .btn-wsp svg {
-        margin-right: 6px;
-        fill: #fff;
+      40% {
+        transform: rotate(-5deg);
       }
 
-      /* Hacemos que el botón flote sobre todo */
-      .wsp-floating {
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 99999 !important; /* Prioridad máxima */
+      60% {
+        transform: rotate(5deg);
       }
 
-      /* Efecto vibración para llamar la atención */
-      @keyframes vibrar {
-        0% {
-          transform: rotate(0deg);
-        }
-        20% {
-          transform: rotate(5deg);
-        }
-        40% {
-          transform: rotate(-5deg);
-        }
-        60% {
-          transform: rotate(5deg);
-        }
-        80% {
-          transform: rotate(-5deg);
-        }
-        100% {
-          transform: rotate(0deg);
-        }
+      80% {
+        transform: rotate(-5deg);
       }
 
-      .btn-wsp.attention {
-        animation: vibrar 0.5s ease-in-out infinite;
-        animation-iteration-count: 2; /* Solo vibra dos veces */
+      100% {
+        transform: rotate(0deg);
       }
+    }
 
-      :root {
-        --accent: #a0141b;
-        --accent-2: #ff9800;
-      }
+    .btn-wsp.attention {
+      animation: vibrar 0.5s ease-in-out infinite;
+      animation-iteration-count: 2;
+      /* Solo vibra dos veces */
+    }
 
-      body {
-        font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
-          "Helvetica Neue", Arial;
-      }
+    :root {
+      --accent: #a0141b;
+      --accent-2: #ff9800;
+    }
 
-      .hero {
-        background: linear-gradient(
-          180deg,
+    body {
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto,
+        "Helvetica Neue", Arial;
+    }
+
+    .hero {
+      background: linear-gradient(180deg,
           rgba(160, 20, 27, 0.08),
-          rgba(255, 152, 0, 0.03)
-        );
-        padding: 80px 0;
+          rgba(255, 152, 0, 0.03));
+      padding: 80px 0;
+    }
+
+    .plan-benefits {
+      list-style: none;
+      padding-left: 0;
+      margin-left: 0;
+    }
+
+    .plan-benefits li {
+      margin-bottom: 8px;
+    }
+
+    .service-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 12px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(0, 0, 0, 0.06);
+    }
+
+    .badge-soft {
+      background: linear-gradient(90deg, var(--accent), var(--accent-2));
+      color: white;
+    }
+
+    .card-ghost {
+      border: 0;
+      box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
+    }
+
+    footer {
+      background: #0b1220;
+      color: #cbd5e1;
+    }
+
+    .features-list li {
+      margin-bottom: 0.6rem;
+    }
+
+    @media (min-width: 992px) {
+      .hero {
+        padding: 100px 0;
+      }
+    }
+
+    /* Animaciones del contenido */
+    .animate-title {
+      animation: fadeInDown 2s ease-out;
+    }
+
+    .animate-subtitle {
+      animation: fadeInUp 2.3s ease-out;
+    }
+
+    .animate-buttons {
+      animation: fadeIn 3.6s ease-in-out;
+    }
+
+    /* Animaciones clave */
+    @keyframes fadeInDown {
+      from {
+        opacity: 0;
+        transform: translateY(-25px);
       }
 
-      .plan-benefits {
-        list-style: none;
-        padding-left: 0;
-        margin-left: 0;
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(25px);
       }
 
-      .plan-benefits li {
-        margin-bottom: 8px;
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
       }
 
-      .service-icon {
-        width: 64px;
-        height: 64px;
-        border-radius: 12px;
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.06);
+      to {
+        opacity: 1;
       }
+    }
 
-      .badge-soft {
-        background: linear-gradient(90deg, var(--accent), var(--accent-2));
-        color: white;
-      }
+    /* Botón con gradiente moderno */
+    .btn-gradient {
+      background: linear-gradient(135deg, #ff4b4b, #ff7676);
+      color: #fff;
+      border: none;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
 
-      .card-ghost {
-        border: 0;
-        box-shadow: 0 8px 30px rgba(2, 6, 23, 0.06);
-      }
+    .btn-gradient:hover {
+      background: linear-gradient(135deg, #ff2e2e, #ff5e5e);
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 75, 75, 0.4);
+    }
 
-      footer {
-        background: #0b1220;
-        color: #cbd5e1;
-      }
+    /* Botón con borde moderno */
+    .btn-outline-modern {
+      background: transparent;
+      color: #ff4b4b;
+      border: 2px solid #ff4b4b;
+      border-radius: 50px;
+      transition: all 0.3s ease;
+    }
 
-      .features-list li {
-        margin-bottom: 0.6rem;
-      }
+    .btn-outline-modern:hover {
+      background: #ff4b4b;
+      color: #fff;
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(255, 75, 75, 0.3);
+    }
+  </style>
+</head>
 
-      @media (min-width: 992px) {
-        .hero {
-          padding: 100px 0;
-        }
-      }
-      /* Animaciones del contenido */
-      .animate-title {
-        animation: fadeInDown 1s ease-out;
-      }
-
-      .animate-subtitle {
-        animation: fadeInUp 1.3s ease-out;
-      }
-
-      .animate-buttons {
-        animation: fadeIn 1.6s ease-in-out;
-      }
-
-      /* Animaciones clave */
-      @keyframes fadeInDown {
-        from {
-          opacity: 0;
-          transform: translateY(-25px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeInUp {
-        from {
-          opacity: 0;
-          transform: translateY(25px);
-        }
-        to {
-          opacity: 1;
-          transform: translateY(0);
-        }
-      }
-
-      @keyframes fadeIn {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
-      }
-    </style>
-  </head>
-
-  <body>
-    <!-- NAV -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
-      <div class="container">
-        <a class="navbar-brand d-flex align-items-center gap-2" href="#">
-          <img
-            src="img/Portal4.png"
-            alt="Softmar"
-            width="44"
-            height="44"
-            style="border-radius: 8px"
-          />
-          <div>
-            <strong>Softmar Company</strong>
-            <div style="font-size: 12px; color: #6b7280">
-              Soluciones digitales 2025
-            </div>
+<body>
+  <!-- NAV -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center gap-2" href="#">
+        <img src="img/Portal4.png" alt="Softmar" width="44" height="44" style="border-radius: 8px" />
+        <div>
+          <strong>Softmar Company</strong>
+          <div style="font-size: 12px; color: #6b7280">
+            Soluciones digitales 2025
           </div>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navMenu"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navMenu">
-          <ul class="navbar-nav ms-auto align-items-lg-center">
-            <li class="nav-item">
-              <a class="nav-link" href="#servicios">Servicios</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#paquetes">Paquetes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#casos">Casos</a>
-            </li>
-            <li class="nav-item">
-              <a class="btn btn-outline-dark ms-2" href="#contacto"
-                >Contáctanos</a
-              >
-            </li>
-          </ul>
         </div>
-      </div>
-    </nav>
-
-    <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
-      <symbol id="circle-half" viewBox="0 0 16 16">
-        <path
-          d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232"
-        />
-      </symbol>
-    </svg>
-    <div
-      class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle wsp-floating"
-    >
-      <button
-        class="btn btn-wsp py-2 d-flex align-items-center shadow-lg"
-        id="bd-theme"
-        type="button"
-        aria-expanded="false"
-        data-bs-toggle="dropdown"
-        aria-label="Toggle theme (auto)"
-        onclick="window.location.href='https://wa.me/51937395625';"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="2em"
-          height="2em"
-          fill="currentColor"
-          class="bi bi-whatsapp"
-          viewBox="0 0 16 16"
-        >
-          <path
-            d="M13.601 2.326A7.892 7.892 0 0 0 8.003.002a7.99 7.99 0 0 0-6.8 11.977L.06 15.94l4.066-1.07A7.96 7.96 0 0 0 8.003 16c4.412 0 8.002-3.588 8.002-8.003a7.926 7.926 0 0 0-2.404-5.671ZM8.003 14.5a6.499 6.499 0 0 1-3.321-.9l-.237-.141-2.415.636.646-2.355-.156-.243a6.473 6.473 0 1 1 5.483 2.997Zm3.527-4.89c-.2-.1-1.18-.581-1.362-.647-.182-.067-.316-.1-.45.1s-.515.647-.633.781c-.117.133-.233.15-.433.05-.2-.1-.844-.31-1.608-.99-.594-.53-.994-1.18-1.11-1.38-.117-.2-.013-.308.088-.408.09-.09.2-.233.3-.35.1-.117.133-.2.2-.333.067-.133.033-.25-.017-.35-.05-.1-.45-1.09-.616-1.49-.16-.39-.323-.34-.45-.35l-.383-.007c-.133 0-.35.05-.533.25-.182.2-.7.683-.7 1.666 0 .983.717 1.934.816 2.067.1.133 1.41 2.15 3.415 3.013.478.206.85.329 1.14.42.477.15.91.13 1.253.079.383-.057 1.18-.48 1.35-.94.167-.46.167-.856.116-.94-.05-.083-.183-.133-.383-.233Z"
-          />
-        </svg>
-        <span class="ms-2 fw-bold" id="wsp-contactanos">Contáctanos</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
       </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item">
+            <a class="nav-link" href="#servicios">Servicios</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#paquetes">Paquetes</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#casos">Casos</a>
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-outline-dark ms-2" href="#contacto">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
 
-    <!-- HERO -->
-    <header class="hero">
-      <div class="container">
-        <div class="row align-items-center">
-          <div class="col-lg-7">
-            <span class="animate-buttons badge badge-soft px-3 py-2 rounded-pill"
-              >NUEVO · 2025</span
-            >
-            <h1 class="display-5 mt-3  animate-title">
-              Tu APP comienza en una idea, termina con nosotros
-            </h1>
-            <p class="lead text-muted  animate-subtitle">
-              Especialistas en Tiendas Virtuales, migración a la nube,
-              ciberseguridad y automatización para pymes, retail y empresas que
-              quieren resultados medibles.
-            </p>
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path
+        d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592m3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.73.73 0 0 0-.529.247c-.182.198-.691.677-.691 1.654s.71 1.916.81 2.049c.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232" />
+    </symbol>
+  </svg>
+  <div class="dropdown position-fixed bottom-0 end-0 mb-3 me-3 bd-mode-toggle wsp-floating">
+    <button class="btn btn-wsp py-2 d-flex align-items-center shadow-lg" id="bd-theme" type="button"
+      aria-expanded="false" data-bs-toggle="dropdown" aria-label="Toggle theme (auto)"
+      onclick="window.location.href='https://wa.me/51937395625';">
+      <svg xmlns="http://www.w3.org/2000/svg" width="2em" height="2em" fill="currentColor" class="bi bi-whatsapp"
+        viewBox="0 0 16 16">
+        <path
+          d="M13.601 2.326A7.892 7.892 0 0 0 8.003.002a7.99 7.99 0 0 0-6.8 11.977L.06 15.94l4.066-1.07A7.96 7.96 0 0 0 8.003 16c4.412 0 8.002-3.588 8.002-8.003a7.926 7.926 0 0 0-2.404-5.671ZM8.003 14.5a6.499 6.499 0 0 1-3.321-.9l-.237-.141-2.415.636.646-2.355-.156-.243a6.473 6.473 0 1 1 5.483 2.997Zm3.527-4.89c-.2-.1-1.18-.581-1.362-.647-.182-.067-.316-.1-.45.1s-.515.647-.633.781c-.117.133-.233.15-.433.05-.2-.1-.844-.31-1.608-.99-.594-.53-.994-1.18-1.11-1.38-.117-.2-.013-.308.088-.408.09-.09.2-.233.3-.35.1-.117.133-.2.2-.333.067-.133.033-.25-.017-.35-.05-.1-.45-1.09-.616-1.49-.16-.39-.323-.34-.45-.35l-.383-.007c-.133 0-.35.05-.533.25-.182.2-.7.683-.7 1.666 0 .983.717 1.934.816 2.067.1.133 1.41 2.15 3.415 3.013.478.206.85.329 1.14.42.477.15.91.13 1.253.079.383-.057 1.18-.48 1.35-.94.167-.46.167-.856.116-.94-.05-.083-.183-.133-.383-.233Z" />
+      </svg>
+      <span class="ms-2 fw-bold" id="wsp-contactanos">Contáctanos</span>
+    </button>
+  </div>
 
-            <div class="d-flex gap-3 mt-4">
-              <a
-                href="#contacto"
-                class="btn btn-dark btn-lg px-4 py-3 shadow-lg"
-              >
-                Solicitar demo gratis
-              </a>
-              <a
-                href="#paquetes"
-                class="btn btn-outline-danger btn-lg px-4 py-3 shadow-lg"
-              >
-                Ver paquetes
-              </a>
-            </div>
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <span class="animate-buttons badge badge-soft px-3 py-2 rounded-pill">NUEVO · 2025</span>
+          <h1 class="display-5 mt-3  animate-title">
+            Tu aplicación comienza en una idea, creala con nosotros
+          </h1>
+          <p class="lead text-muted  animate-subtitle">
+            Especialistas en Tiendas Virtuales, migración a la nube,
+            ciberseguridad y automatización para pymes, retail y empresas que
+            quieren resultados medibles.
+          </p>
+
+          <div class="d-flex gap-3 mt-4 flex-wrap">
+            <!-- Botón principal -->
+            <a href="#contacto" class="btn btn-gradient btn-lg px-5 py-3 fw-bold shadow-lg">
+              Solicita tu demo gratis
+            </a>
+
+            <!-- Botón secundario -->
+            <a href="#paquetes" class="btn btn-outline-modern btn-lg px-5 py-3 fw-bold shadow-lg">
+              Ver paquetes
+            </a>
           </div>
-          <!--<div class="col-lg-5 text-center">
+
+        </div>
+        <!--<div class="col-lg-5 text-center">
 
           <img src="img/TiendaVirtual.png" style="
             margin-left: 10px;
@@ -312,484 +316,572 @@
             vertical-align: middle;
           " alt="Logo" class="img-fluid rounded shadow-sm">
         </div>-->
+      </div>
+    </div>
+  </header>
+
+  <!-- PAQUETES -->
+  <section id="paquetes" class="py-5 bg-light">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2>Paquetes pensados para crecer</h2>
+          <p class="text-muted">
+            Precios referenciales para que puedas ofrecer a tus clientes una
+            manera clara de iniciar.
+          </p>
         </div>
       </div>
-    </header>
 
-    <!-- SERVICIOS -->
-    <section id="servicios" class="py-5">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-8">
-            <h2>Servicios clave para 2025</h2>
-            <p class="text-muted">
-              Ofrecemos soluciones prácticas y empaquetadas para que tu empresa
-              aproveche las tecnologías que hoy generan ventaja competitiva.
-            </p>
-          </div>
-        </div>
+      <div class="row g-4">
 
-        <div class="row g-4">
-          <!-- IA -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">
-                  <svg
-                    width="28"
-                    height="28"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M12 3v2"
-                      stroke="#111"
-                      stroke-width="1.6"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                </div>
-                <div>
-                  <h5>IA & Generative AI</h5>
-                  <p class="mb-0 text-muted">
-                    Chatbots personalizados, automatización de contenidos,
-                    análisis predictivo y asistentes para ventas.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> MVP en 3–6 semanas, integración con
-                datos y soporte de adopción.
-              </p>
-            </article>
-          </div>
-
-          <!-- Low-code -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">⚡</div>
-                <div>
-                  <h5>Low-code / No-code</h5>
-                  <p class="mb-0 text-muted">
-                    Apps internas (CRM, ERPs ligeros, dashboards) con despliegue
-                    rápido y menor costo.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Prototipo funcional en 7–14 días.
-              </p>
-            </article>
-          </div>
-
-          <!-- Cloud -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">☁️</div>
-                <div>
-                  <h5>Migración y Gestión Cloud</h5>
-                  <p class="mb-0 text-muted">
-                    Migramos infra, modernizamos apps y gestionamos costos en
-                    AWS / GCP / Azure.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Plan y migración parcial en 4–8
-                semanas.
-              </p>
-            </article>
-          </div>
-
-          <!-- Ciberseguridad -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">🔒</div>
-                <div>
-                  <h5>Seguridad Administrada (MSS)</h5>
-                  <p class="mb-0 text-muted">
-                    Detección de vulnerabilidades, monitoreo 24/7 y cumplimiento
-                    básico para pymes.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Auditoría inicial + plan de mitigación
-                en 2 semanas.
-              </p>
-            </article>
-          </div>
-
-          <!-- RPA -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">🤖</div>
-                <div>
-                  <h5>Automatización (RPA)</h5>
-                  <p class="mb-0 text-muted">
-                    Bots para tareas repetitivas: facturación, conciliaciones y
-                    procesos administrativos.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> PoC en 2 semanas, ROI esperado en 3
-                meses.
-              </p>
-            </article>
-          </div>
-
-          <!-- RMM -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">🖥️</div>
-                <div>
-                  <h5>Monitoreo y Soporte (RMM)</h5>
-                  <p class="mb-0 text-muted">
-                    Gestión remota de infra, patching y soporte 24/7 para
-                    equipos distribuidos.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Onboarding 1 semana + plan mensual.
-              </p>
-            </article>
-          </div>
-
-          <!-- Customer Success -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">🤝</div>
-                <div>
-                  <h5>Customer Success</h5>
-                  <p class="mb-0 text-muted">
-                    Acompañamiento post-lanzamiento, formación y optimización
-                    para retención y adopción.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Programa trimestral con reportes de
-                adopción.
-              </p>
-            </article>
-          </div>
-
-          <!-- Verticales / SaaS -->
-          <div class="col-md-6 col-lg-4">
-            <article class="card card-ghost p-4 h-100">
-              <div class="d-flex align-items-start gap-3">
-                <div class="service-icon">🏷️</div>
-                <div>
-                  <h5>Soluciones Verticales & SaaS</h5>
-                  <p class="mb-0 text-muted">
-                    ERP/CRM/BI para retail, salud y logística. Paquetes SaaS
-                    llave en mano con suscripción.
-                  </p>
-                </div>
-              </div>
-              <hr />
-              <p class="mb-0">
-                <strong>Entrega:</strong> Piloto en 4 semanas + plan de
-                suscripción.
-              </p>
-            </article>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- PAQUETES -->
-    <section id="paquetes" class="py-5 bg-light">
-      <div class="container">
-        <div class="row mb-4">
-          <div class="col-lg-8">
-            <h2>Paquetes pensados para crecer</h2>
-            <p class="text-muted">
-              Precios referenciales para que puedas ofrecer a tus clientes una
-              manera clara de iniciar.
-            </p>
-          </div>
-        </div>
-
-        <div class="row g-4">
-          <div class="col-md-4">
-            <div
-              class="card p-4 h-100 border-0 shadow-lg"
-              style="
+        <div class="col-md-4">
+          <div class="card p-4 h-100 border-0 shadow-lg" style="
                 border-radius: 18px;
-                background: linear-gradient(135deg, #f0f8ff, #ffffff);
-              "
-            >
-              <h5>Startup · Tienda Virtual</h5>
-              <p class="text-muted">
-                Ideal para emprendedores que quieren empezar a vender online.
-              </p>
-              <h3>S/ 1,499</h3>
-              <ul class="plan-benefits">
-                <li>
-                  ⚡ <strong>Entrega</strong>: tu tienda lista en
-                  <strong>10 días</strong>
-                </li>
-                <li>
-                  🛍️ <strong>Control total</strong>: gestiona productos,
-                  inventario, cupones y precios fácilmente
-                </li>
-                <li>
-                  🎨 <strong>Identidad única</strong>: logotipo profesional
-                </li>
-                <li>
-                  🌐 <strong>Presencia online</strong>: <em>tumarca.com</em>
-                </li>
-                <li>
-                  💳 <strong>Pagos sin límites</strong>: acepta Yape, Plin,
-                  Visa, Mastercard, PayPal y más
-                </li>
-                <li>🤝 <strong>Soporte premium</strong>: 3 meses</li>
-              </ul>
-              <a href="#contacto" class="btn btn-outline-primary">Solicitar</a>
-            </div>
-          </div>
+                background: linear-gradient(135deg, #efe7e7, #ffffff);
+              ">
+            <h5 class="fw-bold text-danger d-flex align-items-center">
+              🚀 Plan Emprendedor · Tienda Virtual
+            </h5>
+            <p class="text-muted">
+              Ideal para emprendedores que quieren empezar a vender online de manera nacional o internacional.
+            </p>
+            <h3 class="text-danger fw-bold">S/ 1,799</h3>
+            <ul class="list-unstyled plan-benefits mt-3">
+              <li>
+                ⚡ <strong>Entrega</strong>: tu tienda lista en
+                <strong>15 días</strong>
+              </li>
+              <li>
+                🛍️ <strong>Control total</strong>: gestiona productos,
+                inventario, cupones y precios fácilmente
+              </li>
+              <li>
+                🎨 <strong>Identidad única</strong>: logotipo profesional
+              </li>
+              <li>
+                🌐 <strong>Presencia online</strong>: <em>tumarca.com</em>
+              </li>
+              <li>
+                💳 <strong>Pagos sin límites</strong>: acepta Yape, Plin,
+                Visa, Mastercard, PayPal y más
+              </li>
+              <li>🤝 <strong>Soporte premium</strong>: 3 meses</li>
+            </ul>
 
-          <div class="col-md-4">
-            <div
-              class="card p-4 h-100 border-0 shadow-lg"
-              style="
-                border-radius: 18px;
-                background: linear-gradient(135deg, #f0f8ff, #ffffff);
-              "
-            >
-              <h5 class="fw-bold text-primary d-flex align-items-center">
-                🚀 Plan Innovador · Idea a App
-              </h5>
-
-              <p class="text-muted mt-2">
-                Transforma tu idea en una aplicación real. Te acompañamos desde
-                el concepto hasta la publicación en tiendas.
-              </p>
-
-              <h3 class="text-success fw-bold">S/ 2,499</h3>
-
-              <ul class="list-unstyled plan-benefits mt-3">
-                <li>
-                  🧠 <strong>Asesoría personalizada</strong> para validar tu
-                  idea
-                </li>
-                <li>
-                  📱 <strong>Prototipo interactivo</strong> antes del desarrollo
-                </li>
-                <li>
-                  ⚡ <strong>Desarrollo de app MVP</strong> (Android & iOS
-                  opcional)
-                </li>
-                <li>
-                  🌐 <strong>Publicación</strong> en Google Play y App Store
-                </li>
-                <li>📊 <strong>Reporte de métricas</strong> y descargas</li>
-                <li>🤝 <strong>Soporte y mantenimiento</strong> por 2 meses</li>
-              </ul>
-
-              <a
-                href="#contacto"
-                class="btn btn-gradient w-100 mt-3 fw-bold text-white"
-                style="
+            <a href="#contacto" class="btn btn-gradient w-100 mt-3 fw-bold text-white" style="
                   border-radius: 12px;
                   padding: 12px;
-                  background: linear-gradient(90deg, #007bff, #00c6ff);
-                "
-              >
-                🚀 Solicitar Asesoría Gratis
-              </a>
-            </div>
+                ">
+              🚀 Solicitar Asesoría Gratis
+            </a>
           </div>
+        </div>
 
-          <div class="col-md-4">
-            <div class="card p-4 h-100">
-              <h5>Enterprise · Seguro</h5>
-              <p class="text-muted">
-                Seguridad gestionada, SLAs y Customer Success.
-              </p>
-              <h3>Desde S/ 15,000</h3>
-              <ul>
-                <li>Auditoría + Mitigación</li>
-                <li>Monitoreo 24/7</li>
-                <li>CS + reporting</li>
-              </ul>
-              <a href="#contacto" class="btn btn-outline-primary">Contactar</a>
+        <div class="col-md-4">
+          <div class="card p-4 h-100 border-0 shadow-lg" style="
+        border-radius: 18px;
+        background: linear-gradient(135deg, #f0f8ff, #ffffff);
+      ">
+            <!-- Título principal -->
+            <h5 class="fw-bold text-primary d-flex align-items-center mb-2">
+              🚀 Plan Innovador · Convierte tu idea en realidad
+            </h5>
+
+            <p class="text-muted mt-2">
+              No te vendemos una app, te acompañamos paso a paso para transformar tu
+              idea en un producto digital real. Avanza a tu ritmo y paga solo por
+              entregables.
+            </p>
+
+            <!-- Fases del plan -->
+            <div class="accordion" id="fasesAccordion">
+
+              <!-- Fase 0: Demo gratis -->
+              <div class="accordion-item border-0 mb-2 shadow-sm rounded">
+                <h2 class="accordion-header" id="fase0">
+                  <button class="accordion-button collapsed fw-bold text-success" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faseZero" aria-expanded="false" aria-controls="faseZero"
+                    style="border-radius: 10px;">
+                    🎁 Fase 0 · Demo Gratis / Diagnóstico Inicial
+                  </button>
+                </h2>
+                <div id="faseZero" class="accordion-collapse collapse" aria-labelledby="fase0"
+                  data-bs-parent="#fasesAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-2">
+                      <li>✅ Escuchamos tu idea y evaluamos su potencial</li>
+                      <li>✅ Te mostramos ejemplos y casos reales</li>
+                      <li>✅ Te damos una hoja de ruta inicial</li>
+                    </ul>
+                    <p class="fw-bold text-primary">💰 Precio: GRATIS</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 1: Validación -->
+              <div class="accordion-item border-0 mb-2 shadow-sm rounded">
+                <h2 class="accordion-header" id="fase1">
+                  <button class="accordion-button collapsed fw-bold text-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faseOne" aria-expanded="false" aria-controls="faseOne"
+                    style="border-radius: 10px;">
+                    🧠 Fase 1 · Validamos tu idea
+                  </button>
+                </h2>
+                <div id="faseOne" class="accordion-collapse collapse" aria-labelledby="fase1"
+                  data-bs-parent="#fasesAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-2">
+                      <li>✅ Análisis real de viabilidad</li>
+                      <li>✅ Documento de propuesta funcional</li>
+                      <li>✅ Prototipo visual de tu proyecto</li>
+                      <li>✅ Recomendación clara: avanzamos o no</li>
+                    </ul>
+                    <p class="fw-bold text-success">💰 Inversión: S/ 450 - S/ 700</p>
+                    <p class="text-muted">⏳ Entrega: 5 a 7 días</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 2: Prototipo + MVP -->
+              <div class="accordion-item border-0 mb-2 shadow-sm rounded">
+                <h2 class="accordion-header" id="fase2">
+                  <button class="accordion-button collapsed fw-bold text-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faseTwo" aria-expanded="false" aria-controls="faseTwo"
+                    style="border-radius: 10px;">
+                    ⚡ Fase 2 · Prototipo Interactivo + MVP
+                  </button>
+                </h2>
+                <div id="faseTwo" class="accordion-collapse collapse" aria-labelledby="fase2"
+                  data-bs-parent="#fasesAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-2">
+                      <li>✅ Prototipo navegable de tu app o web</li>
+                      <li>✅ Desarrollo de versión mínima funcional (MVP)</li>
+                      <li>✅ Feedback y ajustes rápidos</li>
+                    </ul>
+                    <p class="fw-bold text-success">💰 Inversión: S/ 1,200 - S/ 2,000</p>
+                    <p class="text-muted">⏳ Entrega: 3 a 4 semanas</p>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Fase 3: Desarrollo completo -->
+              <div class="accordion-item border-0 shadow-sm rounded">
+                <h2 class="accordion-header" id="fase3">
+                  <button class="accordion-button collapsed fw-bold text-primary" type="button"
+                    data-bs-toggle="collapse" data-bs-target="#faseThree" aria-expanded="false"
+                    aria-controls="faseThree" style="border-radius: 10px;">
+                    🌐 Fase 3 · Desarrollo Completo y Lanzamiento
+                  </button>
+                </h2>
+                <div id="faseThree" class="accordion-collapse collapse" aria-labelledby="fase3"
+                  data-bs-parent="#fasesAccordion">
+                  <div class="accordion-body">
+                    <ul class="list-unstyled mb-2">
+                      <li>✅ App completa lista para publicar</li>
+                      <li>✅ Subida a Google Play & App Store</li>
+                      <li>✅ Reporte de métricas y descargas</li>
+                      <li>✅ Soporte técnico inicial</li>
+                    </ul>
+                    <p class="fw-bold text-warning">
+                      💰 Pago por entregables · Definimos presupuesto en reunión según alcance.
+                    </p>
+                    <p class="text-muted">⏳ Entrega: 1.5 a 3 meses</p>
+                  </div>
+                </div>
+              </div>
             </div>
+
+            <!-- Botón final -->
+            <a href="#contacto" class="btn btn-gradient w-100 mt-4 fw-bold text-white" style="
+          border-radius: 12px;
+          padding: 12px;
+          background: linear-gradient(90deg, #007bff, #00c6ff);
+        ">
+              🚀 Solicitar Asesoría Gratis
+            </a>
+          </div>
+        </div>
+
+
+
+
+        <div class="col-md-4">
+          <div class="card p-4 h-100 border-0 shadow-lg" style="
+                border-radius: 18px;
+                background: linear-gradient(135deg, #efe7e7, #ffffff);
+              ">
+            <h5 class="fw-bold text-danger d-flex align-items-center">
+              🚀 Plan Innovador · Idea a App
+            </h5>
+
+            <p class="text-muted mt-2">
+              Transforma tu idea en una aplicación real. Te acompañamos desde
+              el concepto hasta la publicación en tiendas.
+            </p>
+
+            <h3 class="text-danger fw-bold">S/ 2,499</h3>
+
+            <ul class="list-unstyled plan-benefits mt-3">
+              <li>
+                🧠 <strong>Asesoría personalizada</strong> para validar tu
+                idea
+              </li>
+              <li>
+                📱 <strong>Prototipo interactivo</strong> antes del desarrollo
+              </li>
+              <li>
+                ⚡ <strong>Desarrollo de app MVP</strong> (Android & iOS
+                opcional)
+              </li>
+              <li>
+                🌐 <strong>Publicación</strong> en Google Play y App Store
+              </li>
+              <li>📊 <strong>Reporte de métricas</strong> y descargas</li>
+              <li>🤝 <strong>Soporte y mantenimiento</strong> por 2 meses</li>
+            </ul>
+
+            <a href="#contacto" class="btn btn-gradient w-100 mt-3 fw-bold text-white" style="
+                  border-radius: 12px;
+                  padding: 12px;
+                 
+                ">
+              🚀 Solicitar Asesoría Gratis
+            </a>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- CASOS / TESTIMONIOS -->
-    <section id="casos" class="py-5">
-      <div class="container">
-        <div class="row mb-3">
-          <div class="col-lg-8">
-            <h2>Casos de éxito</h2>
-            <p class="text-muted">
-              Resultados reales: reducción de costos, aumento de ventas y
+  <!-- SERVICIOS -->
+   
+  <section id="servicios" class="py-5">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-8">
+          <h2>Servicios clave para 2025</h2>
+          <p class="text-muted">
+            Ofrecemos soluciones prácticas y empaquetadas para que tu empresa
+            aproveche las tecnologías que hoy generan ventaja competitiva.
+          </p>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- IA -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3v2" stroke="#111" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <div>
+                <h5>IA & Generative AI</h5>
+                <p class="mb-0 text-muted">
+                  Chatbots personalizados, automatización de contenidos,
+                  análisis predictivo y asistentes para ventas.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> MVP en 3–6 semanas, integración con
+              datos y soporte de adopción.
+            </p>
+          </article>
+        </div>
+
+        <!-- Low-code -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">⚡</div>
+              <div>
+                <h5>Low-code / No-code</h5>
+                <p class="mb-0 text-muted">
+                  Apps internas (CRM, ERPs ligeros, dashboards) con despliegue
+                  rápido y menor costo.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Prototipo funcional en 7–14 días.
+            </p>
+          </article>
+        </div>
+
+        <!-- Cloud -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">☁️</div>
+              <div>
+                <h5>Migración y Gestión Cloud</h5>
+                <p class="mb-0 text-muted">
+                  Migramos infra, modernizamos apps y gestionamos costos en
+                  AWS / GCP / Azure.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Plan y migración parcial en 4–8
+              semanas.
+            </p>
+          </article>
+        </div>
+
+        <!-- Ciberseguridad -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">🔒</div>
+              <div>
+                <h5>Seguridad Administrada (MSS)</h5>
+                <p class="mb-0 text-muted">
+                  Detección de vulnerabilidades, monitoreo 24/7 y cumplimiento
+                  básico para pymes.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Auditoría inicial + plan de mitigación
+              en 2 semanas.
+            </p>
+          </article>
+        </div>
+
+        <!-- RPA -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">🤖</div>
+              <div>
+                <h5>Automatización (RPA)</h5>
+                <p class="mb-0 text-muted">
+                  Bots para tareas repetitivas: facturación, conciliaciones y
+                  procesos administrativos.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> PoC en 2 semanas, ROI esperado en 3
+              meses.
+            </p>
+          </article>
+        </div>
+
+        <!-- RMM -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">🖥️</div>
+              <div>
+                <h5>Monitoreo y Soporte (RMM)</h5>
+                <p class="mb-0 text-muted">
+                  Gestión remota de infra, patching y soporte 24/7 para
+                  equipos distribuidos.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Onboarding 1 semana + plan mensual.
+            </p>
+          </article>
+        </div>
+
+        <!-- Customer Success -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">🤝</div>
+              <div>
+                <h5>Customer Success</h5>
+                <p class="mb-0 text-muted">
+                  Acompañamiento post-lanzamiento, formación y optimización
+                  para retención y adopción.
+                </p>
+              </div>
+            </div>
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Programa trimestral con reportes de
               adopción.
             </p>
-          </div>
+          </article>
         </div>
 
-        <div class="row g-4">
-          <div class="col-md-6">
-            <div class="card p-4">
-              <h5>Retail · E-commerce</h5>
-              <p class="mb-0 text-muted">
-                Aumento de 48% en conversión en 90 días tras nueva tienda y
-                automatización de inventario.
-              </p>
+        <!-- Verticales / SaaS -->
+        <div class="col-md-6 col-lg-4">
+          <article class="card card-ghost p-4 h-100">
+            <div class="d-flex align-items-start gap-3">
+              <div class="service-icon">🏷️</div>
+              <div>
+                <h5>Soluciones Verticales & SaaS</h5>
+                <p class="mb-0 text-muted">
+                  ERP/CRM/BI para retail, salud y logística. Paquetes SaaS
+                  llave en mano con suscripción.
+                </p>
+              </div>
             </div>
-          </div>
-
-          <div class="col-md-6">
-            <div class="card p-4">
-              <h5>Servicios · Clínica privada</h5>
-              <p class="mb-0 text-muted">
-                Reducción del 35% en tiempo de atención con automatización de
-                reservas y facturación.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACTO -->
-    <section id="contacto" class="py-5 bg-dark text-white">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6">
-            <h3>Hablemos de tu proyecto</h3>
-            <p class="text-muted">
-              Agenda una demo o envíanos los requisitos. Respuesta en 48 horas
-              hábiles.
+            <hr />
+            <p class="mb-0">
+              <strong>Entrega:</strong> Piloto en 4 semanas + plan de
+              suscripción.
             </p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- CASOS / TESTIMONIOS -->
+  <section id="casos" class="py-5">
+    <div class="container">
+      <div class="row mb-3">
+        <div class="col-lg-8">
+          <h2>Casos de éxito</h2>
+          <p class="text-muted">
+            Resultados reales: reducción de costos, aumento de ventas y
+            adopción.
+          </p>
+        </div>
+      </div>
 
-            <ul class="list-unstyled">
-              <li>
-                <strong>Email:</strong>
-                <a href="mailto:contacto@softmar.pe" class="text-white"
-                  >contacto@softmar.pe</a
-                >
-              </li>
-              <li>
-                <strong>Teléfono:</strong>
-                <a href="tel:+51937395625" class="text-white"
-                  >+51 937 395 625</a
-                >
-              </li>
-            </ul>
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5>Retail · E-commerce</h5>
+            <p class="mb-0 text-muted">
+              Aumento de 48% en conversión en 90 días tras nueva tienda y
+              automatización de inventario.
+            </p>
           </div>
-          <div class="col-lg-6">
-            <div class="card bg-white text-dark p-4">
-              <form id="contactForm">
-                <div class="mb-3">
-                  <label class="form-label">Nombre</label>
-                  <input type="text" class="form-control" id="name" required />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Empresa / Proyecto</label>
-                  <input type="text" class="form-control" id="company" />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Correo</label>
-                  <input
-                    type="email"
-                    class="form-control"
-                    id="email"
-                    required
-                  />
-                </div>
-                <div class="mb-3">
-                  <label class="form-label">Mensaje / Requerimientos</label>
-                  <textarea
-                    class="form-control"
-                    id="message"
-                    rows="4"
-                  ></textarea>
-                </div>
-                <div class="d-grid">
-                  <button class="btn btn-primary" type="submit">
-                    Enviar solicitud
-                  </button>
-                </div>
-              </form>
-              <div id="contactResult" class="mt-3" style="display: none"></div>
-            </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="card p-4">
+            <h5>Servicios · Clínica privada</h5>
+            <p class="mb-0 text-muted">
+              Reducción del 35% en tiempo de atención con automatización de
+              reservas y facturación.
+            </p>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </section>
 
-    <!-- FOOTER -->
-    <footer class="py-4">
-      <div class="container text-center">
-        <p class="mb-1">© 2025 Softmar Company · Soluciones digitales</p>
-        <small class="text-muted">Diseño y desarrollo por Softmar</small>
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-5 bg-dark text-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Hablemos de tu proyecto</h3>
+          <p class="text-muted">
+            Agenda una demo o envíanos los requisitos. Respuesta en 48 horas
+            hábiles.
+          </p>
+
+          <ul class="list-unstyled">
+            <li>
+              <strong>Email:</strong>
+              <a href="mailto:contacto@softmar.pe" class="text-white">contacto@softmar.pe</a>
+            </li>
+            <li>
+              <strong>Teléfono:</strong>
+              <a href="tel:+51937395625" class="text-white">+51 937 395 625</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6">
+          <div class="card bg-white text-dark p-4">
+            <form id="contactForm">
+              <div class="mb-3">
+                <label class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="name" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Empresa / Proyecto</label>
+                <input type="text" class="form-control" id="company" />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Correo</label>
+                <input type="email" class="form-control" id="email" required />
+              </div>
+              <div class="mb-3">
+                <label class="form-label">Mensaje / Requerimientos</label>
+                <textarea class="form-control" id="message" rows="4"></textarea>
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-primary" type="submit">
+                  Enviar solicitud
+                </button>
+              </div>
+            </form>
+            <div id="contactResult" class="mt-3" style="display: none"></div>
+          </div>
+        </div>
       </div>
-    </footer>
+    </div>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-      // Form simple handling (envía como mailto si no hay backend)
-      document
-        .getElementById("contactForm")
-        .addEventListener("submit", function (e) {
-          e.preventDefault();
-          const name = document.getElementById("name").value.trim();
-          const email = document.getElementById("email").value.trim();
-          const company = document.getElementById("company").value.trim();
-          const message = document.getElementById("message").value.trim();
+  <!-- FOOTER -->
+  <footer class="py-4">
+    <div class="container text-center">
+      <p class="mb-1">© 2025 Softmar Company · Soluciones digitales</p>
+      <small class="text-muted">Diseño y desarrollo por Softmar</small>
+    </div>
+  </footer>
 
-          const subject = encodeURIComponent(
-            "Solicitud de demo - " + (company || name)
-          );
-          const body = encodeURIComponent(
-            "Nombre: " +
-              name +
-              "\nEmpresa: " +
-              company +
-              "\nCorreo: " +
-              email +
-              "\n\n" +
-              message
-          );
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Form simple handling (envía como mailto si no hay backend)
+    document
+      .getElementById("contactForm")
+      .addEventListener("submit", function (e) {
+        e.preventDefault();
+        const name = document.getElementById("name").value.trim();
+        const email = document.getElementById("email").value.trim();
+        const company = document.getElementById("company").value.trim();
+        const message = document.getElementById("message").value.trim();
 
-          // Abrir cliente de correo
-          window.location.href =
-            "mailto:contacto@softmar.pe?subject=" + subject + "&body=" + body;
+        const subject = encodeURIComponent(
+          "Solicitud de demo - " + (company || name)
+        );
+        const body = encodeURIComponent(
+          "Nombre: " +
+          name +
+          "\nEmpresa: " +
+          company +
+          "\nCorreo: " +
+          email +
+          "\n\n" +
+          message
+        );
 
-          const result = document.getElementById("contactResult");
-          result.style.display = "block";
-          result.className = "alert alert-success";
-          result.innerText =
-            "Se abrió tu cliente de correo. Si prefieres, también puedes escribirnos a contacto@softmar.pe";
-        });
+        // Abrir cliente de correo
+        window.location.href =
+          "mailto:contacto@softmar.pe?subject=" + subject + "&body=" + body;
 
-      // Detección básica de idioma (muestra en consola)
-      const lang = (navigator.language || "es").split("-")[0];
-      console.log("lang detected", lang);
-    </script>
-  </body>
+        const result = document.getElementById("contactResult");
+        result.style.display = "block";
+        result.className = "alert alert-success";
+        result.innerText =
+          "Se abrió tu cliente de correo. Si prefieres, también puedes escribirnos a contacto@softmar.pe";
+      });
+
+    // Detección básica de idioma (muestra en consola)
+    const lang = (navigator.language || "es").split("-")[0];
+    console.log("lang detected", lang);
+  </script>
+</body>
+
 </html>
